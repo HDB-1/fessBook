@@ -50,6 +50,6 @@ app.get('/posts', (req, res) => {
 // });
 
 
-// Listening to the server on port 6000
+// Listening to the server on port 8000
 app.listen(port, () => console.log(`Example listening on port #${port}!`));
 

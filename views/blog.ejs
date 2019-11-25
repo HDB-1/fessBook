@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="/js/blog.js"></script>
     <title>fessBook Blog</title>
 </head>
@@ -13,6 +14,7 @@
 <body>
 
     <form action="newpost" method="POST">
+        <input type="text" id="blog_title" name="blog_title" value="" placeholder="Blog title..."><br>
         <textarea id="textareaChars" maxlength="140" rows="5" cols="75" placeholder="Type your blog here..." name="textBody"></textarea>
         <span id="chars">140</span> characters remaining
         <input id="submitButton" type="submit" name="submitButton" value="Share">
