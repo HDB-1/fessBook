@@ -3,8 +3,8 @@
 const fs = require('fs')
 
 class BlogPost{
-    constructor(textBody, title, ID, gif){
-        this.ID = ID;
+    constructor(textBody, title, gif){
+
         this.textBody = textBody;
         this.title = title;
         this.reactions = {'laugh': 0, 'smile': 0, 'cry': 0};
@@ -37,7 +37,7 @@ class BlogPost{
 //Then, axios.post to the /postdata route defined below.
 
 
-let testPost = new BlogPost('testingConstructor', 'blahblah', 4);
+let testPost = new BlogPost('testingConstructor', 'blahblah');
 
 
 console.log(testPost);

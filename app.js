@@ -22,11 +22,11 @@ app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => { 
-    res.render("blog.ejs") 
+    res.render("homepage.ejs") 
     })
 
-app.get('/index', (req, res) => { 
-    res.render("index.ejs") 
+app.get('/blog', (req, res) => { 
+    res.render("blog.ejs") 
     })
 
 
@@ -38,9 +38,8 @@ app.post('/newpost', urlencodedParser, (req, res) => {
     // console.log(res.body)
     // console.log(res.body.textBody)
     // res.send(res.body.textBody)
-    res.render("index.ejs", {data: req.body})
-    console.log(req.body);
-    let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, 1, req.body.gif); //creates the object - consider moving to blog.js
+    res.render("homepage.ejs", {data: req.body})
+    let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, req.body.gif); //creates the object - consider moving to blog.js
     blogPost.archivePost();
 });
 
