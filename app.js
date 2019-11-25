@@ -44,6 +44,10 @@ app.post('/newpost', urlencodedParser, (req, res) => {
     blogPost.archivePost();
 });
 
+app.get('/blog', (req, res) => {
+    res.render("blog.ejs")
+})
+
 app.get('/posts', (req, res) => {
     res.sendFile(path.join(__dirname, "database.json"));
 });
