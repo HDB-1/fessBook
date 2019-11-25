@@ -39,9 +39,11 @@ app.post('/newpost', urlencodedParser, (req, res) => {
     // console.log(res.body.textBody)
     // res.send(res.body.textBody)
     res.render("index.ejs", {data: req.body})
-    let blogPost = new blogClass.BlogPost(req.body.textBody, "placeholder title", 1); //creates the object - consider moving to blog.js
+    console.log(req.body);
+    let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, 1, req.body.gif); //creates the object - consider moving to blog.js
     blogPost.archivePost();
 });
+
 app.get('/posts', (req, res) => {
     res.sendFile(path.join(__dirname, "database.json"));
 });

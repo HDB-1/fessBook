@@ -1,0 +1,108 @@
+[
+    {
+        "ID": 1,
+        "textBody": "brtbvrtbv",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": []
+    },
+    {
+        "ID": 1,
+        "textBody": "blog text",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": []
+    },
+    {
+        "ID": 1,
+        "textBody": "bloghwouhfeoerih",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "popcorn"
+    },
+    {
+        "ID": 1,
+        "textBody": "blog testttttt",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "ID": 1,
+        "textBody": "data being saved",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "minion"
+    },
+    {
+        "ID": 1,
+        "textBody": "data being saved",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "minion"
+    },
+    {
+        "ID": 1,
+        "textBody": "test blgo hahahahahaha",
+        "title": "placeholder title",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "ID": 1,
+        "textBody": "38756234987563498756293487",
+        "title": "1234556",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "popcorn"
+    },
+    {
+        "ID": 1,
+        "textBody": "blog hahahahaq",
+        "title": "567567567",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "minion"
+    }
+]
