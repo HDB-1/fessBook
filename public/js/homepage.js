@@ -4,7 +4,7 @@ $(document).ready(function () {
     axios.get("/posts").then(response => { // using axios get this route, then with the response
         let postArray = response.data; // let quote = the data value of the response object4
         console.log(postArray);
-        for (let i = 0; i < postArray.length; i++) {
+        for (let i = postArray.length - 1; i >= 0; i--) {
             let textBody = postArray[i].textBody;
             let title = postArray[i].title;
             
