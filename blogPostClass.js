@@ -3,12 +3,13 @@
 const fs = require('fs')
 
 class BlogPost{
-    constructor(textBody, title, ID){
+    constructor(textBody, title, ID, gif){
         this.ID = ID;
         this.textBody = textBody;
         this.title = title;
         this.reactions = {'laugh': 0, 'smile': 0, 'cry': 0};
         this.comments = [];
+        this.gif = gif;
         
     }
 
@@ -21,6 +22,7 @@ class BlogPost{
     addComment(commentText){
         this.comments.push(commentText);
     }
+
 
     archivePost(){ //adds completed object to json file.
         var dataFromJson = fs.readFileSync('./database.json');
