@@ -1,3 +1,5 @@
+// get all posts, 
+// fs.readFile("")
 const express = require('express');
 const app = express();
 const port = 6000;
@@ -18,16 +20,16 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => res.status(200).render('index'));
 
+app.get('database.json', (req, res) => {
+    res.sendFile(path.join(__dirname, "database.json"));
+});
 
+app.post("/postdata:index", (req, res) => {
+    res.send(req.body.index); // at first, no comments / reactions will be visible! 
 
-
-
-
-
-
-
-
+});
 
 
 // Listening to the server on port 6000
 app.listen(port, () => console.log(`Example listening on port #${port}!`));
+
