@@ -2,7 +2,7 @@
 // fs.readFile("")
 const express = require('express');
 const app = express();
-const port = 6000;
+const port = 8000;
 const axios = require('axios');
 // const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -18,7 +18,7 @@ app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 
-app.get('/', (req, res) => res.status(200).render('index'));
+app.get('/', (req, res) => res.status(200).render('view'));
 
 app.get('database.json', (req, res) => {
     res.sendFile(path.join(__dirname, "database.json"));
@@ -30,6 +30,6 @@ app.post("/postdata:index", (req, res) => {
 });
 
 
-// Listening to the server on port 6000
+// Listening to the server on port 8000
 app.listen(port, () => console.log(`Example listening on port #${port}!`));
 
