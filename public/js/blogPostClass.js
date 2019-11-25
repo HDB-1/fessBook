@@ -1,3 +1,5 @@
+// JS file for blog functionality
+
 class BlogPost{
     constructor(textBody, title, ID){
         this.ID = ID;

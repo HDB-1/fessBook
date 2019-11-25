@@ -1,3 +1,5 @@
+// JS file for write blog page
+
 $(document).ready(() => {
     var maxLength = 140;
     $('textarea').keyup(function() {
