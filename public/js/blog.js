@@ -1,3 +1,5 @@
+import Axios from "axios";
+
 // JS file for write blog page
 
 $(document).ready(() => {
@@ -7,4 +9,11 @@ $(document).ready(() => {
       var length = maxLength-length;
       $('#chars').text(length);
     });
+    // on submit button click
+    Axios
+
+    // let bodyText =  $('textarea').val();
+    // let title = $title
+
 });
+
