@@ -1,0 +1,14 @@
+.gif_group input[type="radio"] {
+   display: none;
+}
+
+/* .gif_group input[type="radio"]:before {
+
+
+    /* border: 2px solid red; */
+    
+/* }  */
+
+input:checked + label   {
+    border: 4px solid red;
+}

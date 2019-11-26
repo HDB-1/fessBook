@@ -9,8 +9,11 @@ $(document).ready(function () {
         for (let i = postArray.length - 1; i >= 0; i--) {
             let textBody = postArray[i].textBody;
             let title = postArray[i].title;
-            
-            $("#blogPostContainer").append(`<a href="views/${i}"><div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} </div></a>`)
+
+            let gif = postArray[i].gif;
+            $("#blogPostContainer").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <img src="${gif}">`)
+            // $("#blogPosts").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <button class="likeButton" id="likeButton_${i}>Like</button><button class="dislikeButton" id="dislikeButton_${i}>Dislike</button> <button class="laughterButton" id="laughterButton_${i}>Laugh</button> </div>`)
+
         }
     
         
