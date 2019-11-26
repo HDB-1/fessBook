@@ -57,18 +57,22 @@
         <span id="chars">140</span> characters remaining
         <input id="submitButton" type="submit" name="submitButton" value="Share">
         <br>
-        <div class="gif_group">
+        <div class="gif_form">
             <input type="radio" name="gif" id="minion">
-            <label for="minion">
+            <label for="minion" class="gif_form_label">
                 <img class="gif" id="minion_gif">
             </label>
             <input type="radio" name="gif" id="patrick">
-            <label for="patrick">
+            <label for="patrick" class="gif_form_label">
                 <img class="gif" id="patrick_gif">
             </label>
-            <input type="radio" name="gif" value="" id="popcorn">
-            <label for="popcorn">
+            <input type="radio" name="gif" id="popcorn">
+            <label for="popcorn" class="gif_form_label">
                 <img class="gif" id="popcorn_gif">
+            </label>
+            <input type="radio" name="gif" value="none" id="no_gif">
+            <label for="no_gif" class="gif_form_label">
+                <p>No gif</p>
             </label>
         </div>
     </form>
