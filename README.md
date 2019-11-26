@@ -47,9 +47,9 @@ Plan of action: ) to do | ] done
     6] 'write post page': text box with character count etc and underlying logic (so that blog posts can't be > max char count.)
     7] Link the json with write blog page and test it displays what we want and how we want it to work (if we keep adding posts it will store, if we close the site and reopen posts are still there)
     8) Get giphy api working 
-    9) Make second page work
-        a) when we click a particular post on homepage it shows that post only
-        b) if we click second page link it gives a random post 
+    9] Make second page work
+        a] when we click a particular post on homepage it shows that post only
+        b] if we click second page link it gives a random post 
     10) Get emoji, likes and comments working and gif showing on screen
     11) Get title as url route
     12) Bug check - make sure it can deal with extreme cases/nothing can break it
