@@ -17,7 +17,7 @@ $(document).ready(function () {
             else{
                 gifHtml ="";  
             }
-            let postHtml = `<div class="post" id="blog${[i]}">  ${title}  <br /> <p>${textBody}</p> <br /> ${gifHtml} </div>`;
+            let postHtml = `<a href="views/${i}"><div class="post" id="blog${[i]}">  ${title}  <br /> <p>${textBody}</p> <br /> ${gifHtml} </div></a>`;
             $("#blogPostContainer").append(postHtml)
             
             // $("#blogPosts").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <button class="likeButton" id="likeButton_${i}>Like</button><button class="dislikeButton" id="dislikeButton_${i}>Dislike</button> <button class="laughterButton" id="laughterButton_${i}>Laugh</button> </div>`)
