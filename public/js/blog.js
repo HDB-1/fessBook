@@ -14,6 +14,7 @@ $(document).ready(() => {
       (response) => {
         const url1 = response.data.data[0].images.downsized.url;
         $('#minion_gif').attr("src", url1)
+        $('#minion').val(url1)
         console.log(response.data.data[0].images.downsized.url)
       }
     )
@@ -22,6 +23,7 @@ $(document).ready(() => {
     .then((response) => {
       const url2 = response.data.data[0].images.downsized.url;
       $('#patrick_gif').attr("src", url2)
+      $('#patrick').val(url2)
       console.log(response.data.data[0].images.downsized.url)
     })
 
@@ -30,6 +32,7 @@ $(document).ready(() => {
       (response) => {
         const url3 = response.data.data[0].images.downsized.url;
         $('#popcorn_gif').attr("src", url3)
+        $('#popcorn').val(url3)
         console.log(response.data.data[0].images.downsized.url)
       })
 
