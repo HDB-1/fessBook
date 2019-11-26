@@ -51,10 +51,10 @@ app.get('/posts', (req, res) => {
     res.sendFile(path.join(__dirname, "database.json"));
 });
 
-// app.post("/postdata:index", (req, res) => {
-//     res.send(req.body.index); // at first, no comments / reactions will be visible! 
+app.post("/posts/:title", (req, res) => {
+  res.render(); // need method of rendering posts title 
 
-// });
+});
 
 
 // Listening to the server on port 8000

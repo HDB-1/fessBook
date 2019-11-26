@@ -10,7 +10,12 @@ class BlogPost{
         this.reactions = {'laugh': 0, 'smile': 0, 'cry': 0};
         this.comments = [];
         this.gif = gif;
+        this.url = `/posts/${this.title}`
         
+    }
+
+    get postRoute(){
+        return this.url;
     }
 
     reactToPost(reaction){
