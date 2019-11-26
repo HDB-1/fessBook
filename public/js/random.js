@@ -1,9 +1,5 @@
-// JS file for view post page
-function index_splitter(){
-    let path = window.location.pathname;
-    let pathSplit = path.split('/');
-    return parseInt(pathSplit[pathSplit.length - 1]);
-}
+// JS file for random post page
+
 
 function appendButtonHtmlGenerator(buttonType, buttonIndex){
     return `<button class="reactionButton" id=${buttonType}Button-${buttonIndex}>${buttonType}</button>`
@@ -12,8 +8,10 @@ function appendButtonHtmlGenerator(buttonType, buttonIndex){
 $(document).ready(function () {
     
     axios.get("/posts").then(response => { // using axios get this route, then with the response
+        
         let postArray = response.data; // let quote = the data value of the response object4
-        let num = index_splitter();
+        let numberr = Math.floor(Math.random() * postArray.length);
+        let num = numberr;
         let textBody = postArray[num].textBody;
         let title = postArray[num].title;
         

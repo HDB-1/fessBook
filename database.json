@@ -1,8 +1,7 @@
 [
     {
-        "ID": 1,
-        "textBody": "brtbvrtbv",
-        "title": "placeholder title",
+        "textBody": "Today I had a sandwich",
+        "title": "My first blog post",
         "reactions": {
             "laugh": 0,
             "smile": 0,
@@ -11,9 +10,19 @@
         "comments": []
     },
     {
-        "ID": 1,
-        "textBody": "blog text",
-        "title": "placeholder title",
+        "textBody": "This one has a gif in it! (not yet but trust)",
+        "title": "2nd",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "textBody": "Starting to get long now",
+        "title": "Test blog 3",
         "reactions": {
             "laugh": 0,
             "smile": 0,
@@ -22,33 +31,8 @@
         "comments": []
     },
     {
-        "ID": 1,
-        "textBody": "bloghwouhfeoerih",
-        "title": "placeholder title",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "popcorn"
-    },
-    {
-        "ID": 1,
-        "textBody": "blog testttttt",
-        "title": "placeholder title",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick"
-    },
-    {
-        "ID": 1,
-        "textBody": "data being saved",
-        "title": "placeholder title",
+        "textBody": "Still hungry",
+        "title": "Blog post 4",
         "reactions": {
             "laugh": 0,
             "smile": 0,
@@ -56,87 +40,5 @@
         },
         "comments": [],
         "gif": "minion"
-    },
-    {
-        "ID": 1,
-        "textBody": "data being saved",
-        "title": "placeholder title",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "minion"
-    },
-    {
-        "ID": 1,
-        "textBody": "test blgo hahahahahaha",
-        "title": "placeholder title",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick"
-    },
-    {
-        "ID": 1,
-        "textBody": "38756234987563498756293487",
-        "title": "1234556",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "popcorn"
-    },
-    {
-        "ID": 1,
-        "textBody": "blog hahahahaq",
-        "title": "567567567",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "minion"
-    },
-    {
-        "ID": 1,
-        "textBody": "blog iehf;isudfhvlisudhgvlisudgv",
-        "title": "test",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "minion"
-    },
-    {
-        "textBody": "5:45 !!!!!!!!!!!!!!!!!!!!!!!!",
-        "title": "5:45 TESTTTTT",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick"
-    },
-    {
-        "textBody": "12345678912345678923456789",
-        "title": "TESTINGNGG123",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick"
     }
 ]

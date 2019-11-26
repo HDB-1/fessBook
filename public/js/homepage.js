@@ -1,5 +1,7 @@
 // JS file for homepage
-
+function appendButtonHtmlGenerator(buttonType, buttonIndex){
+    return `<button class="reactionButton" id=${buttonType}Button-${buttonIndex}>${buttonType}</button>`
+}
 $(document).ready(function () {
     axios.get("/posts").then(response => { // using axios get this route, then with the response
         let postArray = response.data; // let quote = the data value of the response object4
@@ -8,14 +10,10 @@ $(document).ready(function () {
             let textBody = postArray[i].textBody;
             let title = postArray[i].title;
             
-            $("#blogPostContainer").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br>`)
-            // $("#blogPosts").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <button class="likeButton" id="likeButton_${i}>Like</button><button class="dislikeButton" id="dislikeButton_${i}>Dislike</button> <button class="laughterButton" id="laughterButton_${i}>Laugh</button> </div>`)
+            $("#blogPostContainer").append(`<a href="views/${i}"><div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} </div></a>`)
         }
-
-// create button with same i value that can be used to I.D which blog post the user is reacting to. 
-//when clicked, increments the counter for that emotion on the object (see blog post class)
+    
         
 
-        // $(".quote").html(quote);
     });
 })
