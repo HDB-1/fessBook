@@ -20,7 +20,7 @@ $(document).ready(function () {
         let gif = postArray[num].gif;
 
         let gifHtml;
-        if (gif) {
+        if (gif.length > 2) {
             gifHtml = `<img src="${gif}" />`;
         } else {
             gifHtml = "";
