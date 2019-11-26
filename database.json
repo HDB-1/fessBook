@@ -1,88 +1,19 @@
 [
     {
-        "textBody": "Sup",
-        "title": "Hey",
+        "textBody": "111111",
+        "title": "test1 ",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "patrick"
+        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e002645f21cafb37eb1a9f2c4dc0437cae33a5dd71&rid=giphy.gif",
+        "url": "/posts/test1 "
     },
     {
-        "textBody": "so good so bad",
-        "title": "Hey man",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick"
-    },
-    {
-        "textBody": "Great",
-        "title": "Hey",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick",
-        "url": "/posts/Hey"
-    },
-    {
-        "textBody": "f3oiheroifuher",
-        "title": "",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "url": "/posts/"
-    },
-    {
-        "textBody": "deiucgeicgeigiudgxiuwgxiwgxiwgixugwx",
-        "title": "ierygciegciuegcieugc",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick",
-        "url": "/posts/ierygciegciuegcieugc"
-    },
-    {
-        "textBody": "eroerhouw234529386398746",
-        "title": "rgeiuferiugf",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick",
-        "url": "/posts/rgeiuferiugf"
-    },
-    {
-        "textBody": "eroerhouw234529386398746",
-        "title": "rgeiuferiugf",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "patrick",
-        "url": "/posts/rgeiuferiugf"
-    },
-    {
-        "textBody": "rvrvrv",
-        "title": "ervrv",
+        "textBody": "2222222222",
+        "title": "test 2",
         "reactions": {
             "laugh": 0,
             "smile": 0,
@@ -90,11 +21,22 @@
         },
         "comments": [],
         "gif": "on",
-        "url": "/posts/ervrv"
+        "url": "/posts/test 2"
     },
     {
-        "textBody": "rvrvrv",
-        "title": "ervrv",
+        "textBody": "rtyjrjryj",
+        "title": "ytjrhgj",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "url": "/posts/ytjrhgj"
+    },
+    {
+        "textBody": "hfgjghjhfg",
+        "title": "ffghfg",
         "reactions": {
             "laugh": 0,
             "smile": 0,
@@ -102,79 +44,19 @@
         },
         "comments": [],
         "gif": "on",
-        "url": "/posts/ervrv"
+        "url": "/posts/ffghfg"
     },
     {
-        "textBody": "gvtv",
-        "title": "testing",
+        "textBody": "fasfasf",
+        "title": "dassasa",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "",
-        "url": "/posts/testing"
-    },
-    {
-        "textBody": "gvtv",
-        "title": "testing",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "",
-        "url": "/posts/testing"
-    },
-    {
-        "textBody": "32456789",
-        "title": "test",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "https://media3.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e06226ea38fbad96b45f6f6f760a98cc2067388d1e&rid=giphy.gif",
-        "url": "/posts/test"
-    },
-    {
-        "textBody": "32456789",
-        "title": "test",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "https://media3.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e06226ea38fbad96b45f6f6f760a98cc2067388d1e&rid=giphy.gif",
-        "url": "/posts/test"
-    },
-    {
-        "textBody": "435353",
-        "title": "rtvr",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0f4eadb5d77c450dab6d2c5815dbbb629ad8c9b72&rid=giphy.gif",
-        "url": "/posts/rtvr"
-    },
-    {
-        "textBody": "435353",
-        "title": "rtvr",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0f4eadb5d77c450dab6d2c5815dbbb629ad8c9b72&rid=giphy.gif",
-        "url": "/posts/rtvr"
+        "gif": "https://media3.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e041782f6a11d6cc3e4c7951096e2572261796d56b&rid=giphy-downsized.gif",
+        "url": "/posts/dassasa"
     },
     {
         "textBody": "",
@@ -185,150 +67,218 @@
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media0.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e0b3ac54f6f13c3c8fbd226b00633d0aa66d082973&rid=giphy-downsized.gif",
+        "gif": "on",
         "url": "/posts/"
     },
     {
-        "textBody": "",
-        "title": "",
+        "textBody": "y5eheet",
+        "title": "45y45y",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media0.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e0b3ac54f6f13c3c8fbd226b00633d0aa66d082973&rid=giphy-downsized.gif",
-        "url": "/posts/"
+        "gif": "on",
+        "url": "/posts/45y45y"
     },
     {
-        "textBody": "123456789098765432",
-        "title": "testinggggg7777",
+        "textBody": "dsvsdvsdv",
+        "title": "svdsv",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0f4eadb5d77c450dab6d2c5815dbbb629ad8c9b72&rid=giphy.gif",
-        "url": "/posts/testinggggg7777"
+        "url": "/posts/svdsv"
     },
     {
-        "textBody": "123456789098765432",
-        "title": "testinggggg7777",
+        "textBody": "bdfbhdr",
+        "title": "dfgdfhdfh",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0f4eadb5d77c450dab6d2c5815dbbb629ad8c9b72&rid=giphy.gif",
-        "url": "/posts/testinggggg7777"
+        "gif": "https://media0.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0136e4a670d1bc362d276a0bcf9955a79f56c277a&rid=giphy.gif",
+        "url": "/posts/dfgdfhdfh"
     },
     {
-        "textBody": "TESTING GIF ON PREVIEW!!!!!!!!!!!!!!9652043756203487652340876520487562034875623048756",
-        "title": "11:20 test!!!!!!!!!!",
+        "textBody": "sdvdsv",
+        "title": "vsdvsdv",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media0.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e0b3ac54f6f13c3c8fbd226b00633d0aa66d082973&rid=giphy-downsized.gif",
-        "url": "/posts/11:20 test!!!!!!!!!!"
+        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e002645f21cafb37eb1a9f2c4dc0437cae33a5dd71&rid=giphy.gif",
+        "url": "/posts/vsdvsdv"
     },
     {
-        "textBody": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-        "title": "hey",
+        "textBody": "bffdb",
+        "title": "dfd",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0154447b4dabc09c9bf6c264b2b731281b2b5eec1&rid=giphy.gif",
-        "url": "/posts/hey"
+        "url": "/posts/dfd"
     },
     {
-        "textBody": "hhhhhhhhhhhhhhhhh",
-        "title": "h",
+        "textBody": "fgdfdgdfgdf",
+        "title": "dfdf",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0154447b4dabc09c9bf6c264b2b731281b2b5eec1&rid=giphy.gif",
-        "url": "/posts/h"
+        "gif": "on",
+        "url": "/posts/dfdf"
     },
     {
-        "textBody": "ggggggggggggggggggggggg",
-        "title": "hnjsfsdnkfdnnnnnnnnn",
+        "textBody": "fwefwe",
+        "title": "wfefwe",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0383dfbc16316dea2a2671938fc3f70eb78bbaa37&rid=giphy.gif",
-        "url": "/posts/hnjsfsdnkfdnnnnnnnnn"
+        "gif": "https://media0.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0136e4a670d1bc362d276a0bcf9955a79f56c277a&rid=giphy.gif",
+        "url": "/posts/wfefwe"
     },
     {
-        "textBody": "sooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
-        "title": "hey",
+        "textBody": "wefwef",
+        "title": "wefwefwe",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media0.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e05cd44f164a32463080fd46978c992ddcb7c7f9e7&rid=giphy-downsized.gif",
-        "url": "/posts/hey"
+        "gif": "on",
+        "url": "/posts/wefwefwe"
     },
     {
-        "textBody": "ssssssssss",
-        "title": "",
+        "textBody": "efwef",
+        "title": "wefwefwe",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "none",
-        "url": "/posts/"
+        "url": "/posts/wefwefwe"
     },
     {
-        "textBody": "nnnnnnnnnnnnnnnnnnnnnnnnnn",
-        "title": "jhbbbbbbbbbbbb",
+        "textBody": "wefwef",
+        "title": "wef",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0a8ba0ee072d8014bd1b2d9f9fd4be62ac0f2ca25&rid=giphy.gif",
-        "url": "/posts/jhbbbbbbbbbbbb"
+        "gif": "https://media0.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0136e4a670d1bc362d276a0bcf9955a79f56c277a&rid=giphy.gif",
+        "url": "/posts/wef"
     },
     {
-        "textBody": "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
-        "title": "HHHHHHHHHHHHHHHHHHHH",
+        "textBody": "ewfwef",
+        "title": "wefwef",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "url": "/posts/HHHHHHHHHHHHHHHHHHHH"
+        "gif": "on",
+        "url": "/posts/wefwef"
     },
     {
-        "textBody": "jbbhjjhb",
-        "title": "jkknk",
+        "textBody": "sdvsdv",
+        "title": "svdvsdv",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0a8ba0ee072d8014bd1b2d9f9fd4be62ac0f2ca25&rid=giphy.gif",
-        "url": "/posts/jkknk"
+        "url": "/posts/svdvsdv"
+    },
+    {
+        "textBody": "ecerceceeccece",
+        "title": "ece",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "url": "/posts/ece"
+    },
+    {
+        "textBody": "eccece",
+        "title": "ec",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/ec"
+    },
+    {
+        "textBody": "fr",
+        "title": "3f",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e02bc4f9cd6c58a925b51edad5b1ea07aa4325e676&rid=giphy.gif",
+        "url": "/posts/3f"
+    },
+    {
+        "textBody": "evcc",
+        "title": "refcerc",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/refcerc"
+    },
+    {
+        "textBody": "evr",
+        "title": "evrv",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e091a1b550979235d354d0d0547685004ab796b97a&rid=giphy.gif",
+        "url": "/posts/evrv"
+    },
+    {
+        "textBody": "ercececec",
+        "title": "revev",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/revev"
     }
 ]
