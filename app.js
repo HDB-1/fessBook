@@ -56,5 +56,5 @@ app.post("/posts/:title", (req, res) => {
 
 
 // Listening to the server on port 8000
-app.listen(port, () => console.log(`Example listening on port #${port}!`));
+app.listen(port, () => console.log(`Example listening on port #${port}! \n http://localhost:${port}`));
 
