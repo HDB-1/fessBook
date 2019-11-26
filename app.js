@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const axios = require('axios');
+const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -45,15 +46,36 @@ app.get('/random', (req, res) => {
 
 });
 
-app.get('/posts', (req, res) => {
-    res.sendFile(path.join(__dirname, "database.json"));
+app.get('/posts',urlencodedParser, (req, res) => {
+    res.sendFile(path.join(__dirname, "database.json"))
+    //console.log(res);
 }); // Do not touch - archives all posts for requesting.
 
-app.post("/posts/:title", (req, res) => {
-  res.render(); // need method of rendering posts title 
-
+app.get("/posts/:index", urlencodedParser, (req, res) => {
+    fs.readFile("./database.json", (err, data) => {
+         if(err){
+             console.error(err)
+            }
+             else {
+                console.log("File has been read")
+                let jsonArray = JSON.parse(data);
+                let index = req.params.index;
+                try {
+                res.json(jsonArray[index]);
+                } catch {
+                res.json({error: `post ${index} does not exists`});  
+                }
+     }
+    })
+  // need method of rendering posts title 
+  
 });
 
+/*
+axios.get('/posts').then((response) => {
+    console.log(response)
+}).catch((error) => console.log(error))
+*/
 
 // Listening to the server on port 8000
 app.listen(port, () => console.log(`Example listening on port #${port}! \n http://localhost:${port}`));
