@@ -29,10 +29,10 @@ app.get('/blog', (req, res) => {
     res.render("blog.ejs") 
     })
 
-app.post('/', urlencodedParser, (req, res) => { 
-    res.render("homepage.ejs", {data: req.body})
+app.post('/newpost/:id', urlencodedParser, (req, res) => { 
     let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, req.body.gif); //creates the object - consider moving to blog.js
     blogPost.archivePost();
+    res.redirect("/")
 });
 
 app.get('/views/:index', (req, res) => 
@@ -56,5 +56,5 @@ app.post("/posts/:title", (req, res) => {
 
 
 // Listening to the server on port 8000
-app.listen(port, () => console.log(`Example listening on port #${port}!`));
+app.listen(port, () => console.log(`Example listening on port #${port}! \n http://localhost:${port}`));
 

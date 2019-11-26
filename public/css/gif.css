@@ -1,0 +1,15 @@
+.gif_form input[type="radio"] {
+   display: none;
+}
+
+.gif_form_label {
+    cursor: pointer;
+}
+
+input:checked + .gif_form_label   {
+    border: 4px solid  #547AA5;
+}
+
+.gif {
+    height: 180px;
+}

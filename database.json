@@ -1,44 +1,37 @@
 [
     {
-        "textBody": "Today I had a sandwich",
-        "title": "My first blog post",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": []
-    },
-    {
-        "textBody": "This one has a gif in it! (not yet but trust)",
-        "title": "2nd",
+        "textBody": "sdfjadsnfjfs",
+        "title": "Test 1",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "patrick"
+        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e07c79bbd6e0152fab0ce1a748ccf5333c35c18a5a&rid=giphy.gif",
+        "url": "/posts/Test 1"
     },
     {
-        "textBody": "Starting to get long now",
-        "title": "Test blog 3",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": []
-    },
-    {
-        "textBody": "Still hungry",
-        "title": "Blog post 4",
+        "textBody": "I hate minions",
+        "title": "Test 2",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [],
-        "gif": "minion"
+        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e002645f21cafb37eb1a9f2c4dc0437cae33a5dd71&rid=giphy.gif",
+        "url": "/posts/Test 2"
+    },
+    {
+        "textBody": "Seriously, they're awful",
+        "title": "Test 3",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "url": "/posts/Test 3"
     }
 ]
