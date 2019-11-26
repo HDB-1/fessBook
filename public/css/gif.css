@@ -1,0 +1,9 @@
+.gif_group input[type="radio"] {
+   display: none;
+}
+
+.gif_group input[type="radio"]:checked {
+
+    border: 2px solid red;
+    
+}

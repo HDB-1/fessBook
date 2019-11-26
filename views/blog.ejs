@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Font for Logo -->
-        <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <!-- Font for Logo -->
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
 
-      <!-- Logo CSS -->
-      <link href="/css/logo.css" type="text/css" rel="stylesheet">
+    <!-- Logo CSS -->
+    <link href="/css/logo.css" type="text/css" rel="stylesheet">
+    <!-- gif CSS -->
+    <link href="/css/gif.css" type="text/css" rel="stylesheet">
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -21,14 +23,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-<!-- add cxsss -->
+    <!-- axios -->
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- add cxsss -->
     <script src="/js/blog.js"></script>
     <title>fessBook Blog</title>
 </head>
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="/"><p class="logo">fess<span class="book">BooK</span></p></a>
+        <a class="navbar-brand" href="/">
+            <p class="logo">fess<span class="book">BooK</span></p>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,9 +54,20 @@
             name="textBody"></textarea>
         <span id="chars">140</span> characters remaining
         <input id="submitButton" type="submit" name="submitButton" value="Share"><br>
-        <input type="radio" name="gif" value="minion">Laughing
-        <input type="radio" name="gif" value="patrick">Crying
-        <input type="radio" name="gif" value="popcorn">Popcorn Munching
+        <div class="gif_group">
+        <label for="minion">
+            <img class="gif" id="minion_gif">
+            <input type="radio" name="gif" value="minion" id="minion">
+        </label>
+        <label for="patrick">
+            <img class="gif" id="patrick_gif">
+            <input type="radio" name="gif" value="patrick" id="patrick">
+        </label>
+        <label for="popcorn">
+            <img class="gif" id="popcorn_gif">
+            <input type="radio" name="gif" value="popcorn" id="popcorn">
+        </label>
+    </div>
     </form>
 
 </body>
