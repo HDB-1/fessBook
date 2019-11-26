@@ -7,11 +7,19 @@ $(document).ready(function () {
         let postArray = response.data; // let quote = the data value of the response object4
         console.log(postArray);
         for (let i = postArray.length - 1; i >= 0; i--) {
+            let gif = postArray[i].gif;
             let textBody = postArray[i].textBody;
             let title = postArray[i].title;
-
-            let gif = postArray[i].gif;
-            $("#blogPostContainer").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <img src="${gif}">`)
+            let gifHtml;
+            if(gif){
+                gifHtml = `<img src="${gif}" />`;
+            }
+            else{
+                gifHtml ="";  
+            }
+            let postHtml = `<div class="post" id="blog${[i]}">  ${title}  <br /> <p>${textBody}</p> <br /> ${gifHtml} </div>`;
+            $("#blogPostContainer").append(postHtml)
+            
             // $("#blogPosts").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <button class="likeButton" id="likeButton_${i}>Like</button><button class="dislikeButton" id="dislikeButton_${i}>Dislike</button> <button class="laughterButton" id="laughterButton_${i}>Laugh</button> </div>`)
 
         }
