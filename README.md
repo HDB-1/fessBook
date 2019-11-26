@@ -50,10 +50,12 @@ Plan of action: ) to do | ] done
     9) Make second page work
         a) when we click a particular post on homepage it shows that post only
         b) if we click second page link it gives a random post 
-    10) Get emoji, likes working and gif showing on screen
-    11) Bug check - make sure it can deal with extreme cases/nothing can break it
-    12) style
-    13) make presentation
+    10) Get emoji, likes and comments working and gif showing on screen
+    11) Get title as url route
+    12) Bug check - make sure it can deal with extreme cases/nothing can break it
+    13) style
+    14) make presentation
+    15) if we have time add random things
 --------------------------------------------------
 Things to remember:
     - Standups every morning 9.15-9.30 where we see where we are all at. Lunch 1-2 NO CODE, followed by quick 5 min catch up after lunch. 
