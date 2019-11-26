@@ -138,5 +138,60 @@
         },
         "comments": [],
         "gif": "patrick"
+    },
+    {
+        "textBody": "this is my new post",
+        "title": "Hey",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": []
+    },
+    {
+        "textBody": "This is what we can do now! :) ",
+        "title": "Hey",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "textBody": "Sup",
+        "title": "Hey",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "textBody": "so good so bad",
+        "title": "Hey man",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick"
+    },
+    {
+        "textBody": "Great",
+        "title": "Hey",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "patrick",
+        "url": "/posts/Hey"
     }
 ]
