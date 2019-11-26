@@ -1,4 +1,11 @@
 // JS file for write blog page
+const rand = () => {
+  return Math.random().toString(36).substr(2); // remove `0.`
+};
+
+const token = () => {
+  return rand() + rand(); // to make it longer
+};
 
 $(document).ready(() => {
   var maxLength = 140;
@@ -8,6 +15,10 @@ $(document).ready(() => {
     $('#chars').text(length);
   });
 
+
+ //token() "bnh5yzdirjinqaorq0ox1tf383nb3xr"
+
+  $('form').attr("action",`/newpost/${token()}` )
 
   axios.get("https://api.giphy.com/v1/gifs?api_key=Vg9n7RBkEBnIpMlXbYQGvUjSXuOkOtdX&ids=Fn7q3cMgPZmqk")
     .then(
@@ -35,5 +46,7 @@ $(document).ready(() => {
         $('#popcorn').val(url3)
         console.log(response.data.data[0].images.downsized.url)
       })
+
+   
 
 });
