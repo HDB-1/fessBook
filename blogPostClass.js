@@ -3,7 +3,7 @@
 const fs = require('fs')
 
 class BlogPost{
-    constructor(id, textBody, title, gif){
+    constructor(textBody, title, gif){
         this.id = id;
         this.textBody = textBody;
         this.title = title;
@@ -30,8 +30,9 @@ class BlogPost{
 
 
     archivePost(){ //adds completed object to json file.
-        var dataFromJson = fs.readFileSync('./database.json');
-        var json = JSON.parse(dataFromJson);
+        const dataFromJson = fs.readFileSync('./database.json');
+        const json = JSON.parse(dataFromJson);
+         // add id during post creation 
         json.push(this);
         fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
     }
