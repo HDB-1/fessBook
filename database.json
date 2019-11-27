@@ -1,43 +1,32 @@
 [
     {
-        "textBody": "writing 1",
-        "title": "test 1",
+        "textBody": "ddddddddddddddddddd",
+        "title": "h",
         "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
+            "laugh": 21,
+            "dislike": 18,
+            "like": 14
         },
         "comments": [
-            "doop"
+            "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
         ],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0b99bf1586bbb679ef01ffe97123b56c6fe1e9b03&rid=giphy.gif",
-        "url": "/posts/test 1"
+        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e050d971c4f3691f2eaec57baf7f3500fc8635e36e&rid=giphy.gif",
+        "url": "/posts/h"
     },
     {
-        "textBody": "writing 2",
-        "title": "test 2 ",
+        "textBody": "hhhhhhhhhhhhhhhh",
+        "title": "njnn",
         "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
-        },
-        "comments": [],
-        "gif": "https://media0.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0d0704b8a24c3ba1873236069453609f7b5bc6b3b&rid=giphy.gif",
-        "url": "/posts/test 2 "
-    },
-    {
-        "textBody": "writing 3",
-        "title": "test 3 ",
-        "reactions": {
-            "laugh": 0,
-            "smile": 0,
-            "cry": 0
+            "laugh": 5,
+            "dislike": 10,
+            "like": 2
         },
         "comments": [
-            "woop",
-            "doop"
+            "hhhhhhhhhhhhhh",
+            "",
+            ""
         ],
-        "gif": "https://media3.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e05272a04a460c29167de3e2915cdc26fd22f6a39f&rid=giphy-downsized.gif",
-        "url": "/posts/test 3 "
+        "gif": "https://media2.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e075d43cea98f02a1bbcdd2b77031efa2b654974ae&rid=giphy.gif",
+        "url": "/posts/njnn"
     }
 ]

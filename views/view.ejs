@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <!-- LOGO CSS -->
     <link href="/css/logo.css" type="text/css" rel="stylesheet">
+    <link href="/css/reactions.css" type="text/css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -26,6 +27,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dc5f3f90a7.js" crossorigin="anonymous"></script>
     <script src="/js/gif.js"></script>
     <script src="/js/view.js"></script>
     <title>fessBook</title>
@@ -52,6 +55,17 @@
     <div id="blogPostContainer"></div>
 
     <br>
+    <form id="reaction_form" method="POST">
+        <button type="submit" id="like-button" class="reaction-button" name="like" value="like"><i
+                class="fas fa-heart"></i><span class="badge badge-light" id="like-counter"></span></button>
+        <button type="submit" id="dislike-button" class="reaction-button" name="dislike" value="dislike"><i
+                class="fas fa-thumbs-down"></i><span class="badge badge-light" id="dislike-counter"></span></button>
+        <button type="submit" id="laugh-button" class="reaction-button" name="laugh" value="laugh"><i
+                class="fas fa-laugh-squint"></i><span class="badge badge-light" id="laugh-counter"></span></button>
+    </form>
+
+
+
 
     <form id="comment_form" method="POST">
         <div>
