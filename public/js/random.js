@@ -1,12 +1,12 @@
 // JS file for random post page
-
+/*
 
 function appendButtonHtmlGenerator(buttonType, buttonIndex) {
     return `<button class="reactionButton" id=${buttonType}Button-${buttonIndex}>${buttonType}</button>`
 }
 
 $(document).ready(function () {
-
+  
     axios.get("/posts").then(response => { // using axios get this route, then with the response
 
         let postArray = response.data; // let quote = the data value of the response object4
@@ -31,4 +31,6 @@ $(document).ready(function () {
         });
         $("#comment_form").attr("action", `views/comment/${num}`);
     })
+    
 });
+*/
