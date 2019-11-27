@@ -1,3 +1,14 @@
+.gif_form {
+    display: none;
+    align-content: center;
+    background: rgb(199, 255, 251);
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-size: 100% 100%;
+}
+
+
 .gif_form input[type="radio"] {
    display: none;
 }
@@ -11,5 +22,5 @@ input:checked + .gif_form_label   {
 }
 
 .gif {
-    height: 180px;
+    height: 120px;
 }
