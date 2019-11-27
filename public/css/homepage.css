@@ -11,7 +11,7 @@ div {
 #successfulPostAlert{
     display: none;
 }
-=======
+
 #blogPostContainer {
     display: flex;
     flex-direction: column;
