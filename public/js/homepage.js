@@ -22,7 +22,7 @@ $(document).ready(function () {
                 // console.log("no gif" + gif);
                 // console.log("no gif HTML" + gifHtml);
             }
-            let postHtml = `<a href="views/${i}"><div class="post" id="blog${[i]}">  ${title}  <br /> <p>${textBody}</p> <br /> ${gifHtml} </div></a>`;
+            let postHtml = `<a href="views/${i}"><div class="post" id="blog${[i]}"> <strong> ${title} </strong> <br /> <p>${textBody}</p> <br /> ${gifHtml} </div></a>`;
             $("#blogPostContainer").append(postHtml)
 
         }

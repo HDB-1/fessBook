@@ -1,1 +1,12 @@
 /* CSS for view a post page */
+
+.post {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.giphy {
+    width: 100%;
+}

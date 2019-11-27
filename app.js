@@ -101,8 +101,42 @@ app.post("/views/comment/:index", urlencodedParser, (req, res) => {
             }
         }
     })
-    // need method of rendering posts title
-    //   res.send("hello!!!!!!!!!!!!!!!!!!!!");
+});
+
+app.post("/views/reaction/:index", urlencodedParser, (req, res) => {
+    debugger
+    fs.readFile("./database.json", (err, data) => {
+        if (err) {
+            console.error(err)
+        } else {
+            console.log("File has been read")
+            console.log("req body ------START-------")
+            console.log(req.body.dislike)
+            console.log(req.body.like)
+            console.log(req.body.laugh)
+            console.log("req body -------END-------")
+            //console.log(req.body.comment);
+            let jsonArray = JSON.parse(data);
+            let index = req.params.index;
+            if (req.body.dislike){
+                jsonArray[index].reactions.dislike++;
+            };
+            if (req.body.laugh){
+                jsonArray[index].reactions.laugh++;
+            };
+            if (req.body.like){
+                jsonArray[index].reactions.like++;
+            };
+            fs.writeFile("./database.json", JSON.stringify(jsonArray, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
+            try {
+                res.redirect(`/views/${index}`);
+            } catch {
+                res.json({
+                    error: `post ${index} does not exists`
+                });
+            }
+        }
+    })
 });
 
 /*

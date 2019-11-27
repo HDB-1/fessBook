@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         
 
     <!-- Font for Logo -->
@@ -16,6 +17,11 @@
     <link href="/css/logo.css" type="text/css" rel="stylesheet">
 
     <link href="/css/view.css" type="text/css" rel="stylesheet">
+
+
+        <link href="/css/view.css" type="text/css" rel="stylesheet">
+       
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -35,7 +41,11 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    
+
         <a class="navbar-brand" href="/">
             <p class="logo">fess<span class="book">BooK</span></p>
         </a>
@@ -45,25 +55,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+
                 <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="/blog">Blog</a>
                 <a class="nav-item nav-link view5" href="/random">Random blog</a>
+
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link " href="/blog">Blog</a>
+                <a class="nav-item nav-link view5 active" href="/random">Random blog</a>
+
             </div>
         </div>
     </nav>
-
+    <br>
     <div id="blogPostContainer"></div>
+
+    <br>
 
     <form id="comment_form" method="POST">
         <div>
             <input type="text" name="comment" id="comment" placeholder="Comment" value="">
             <button type="submit" id="comment_button">Post Comment</button>
             <br>
-            <br>
             <p id="logged_comment"></p>
         </div>
     </form>
-    <br>
     <br>
     <h4>Comments:</h4>
     <div id="comment_thread"></div>

@@ -25,13 +25,10 @@ $(document).ready(function () {
             gifHtml = "";
         }
 
-        $("#blogPostContainer").append(`<div class="post">  ${title}  <br> ${textBody} <br> ${gifHtml} </div>`)
+        $("#blogPostContainer").append(`<div class="post"> <strong> ${title} </strong> <br> ${textBody} <br> <div class="giphy">${gifHtml}</div> </div>`)
         comments.forEach(comment => {
             $("#comment_thread").prepend(`${comment}<br>`);
         });
-        $("#blogPostContainer").append(appendButtonHtmlGenerator("like", num));
-        $("#blogPostContainer").append(appendButtonHtmlGenerator("dislike", num));
-        $("#blogPostContainer").append(appendButtonHtmlGenerator("laugh", num));
         $("#comment_form").attr("action", `views/comment/${num}`);
     })
 });

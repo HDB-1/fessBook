@@ -1,4 +1,7 @@
 /* CSS for homepage */
+div {
+    color: black;
+}
 
 .post{
     margin: 10px;
@@ -7,4 +10,10 @@
 
 #successfulPostAlert{
     display: none;
+}
+=======
+#blogPostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
