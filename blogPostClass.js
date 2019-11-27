@@ -37,6 +37,8 @@ class BlogPost{
     }
 }
 
+
+
 //on click, creates a new blogpost. The text box content is added to textBody in the object, and title = title etc.
 
 //Then, axios.post to the /postdata route defined below.

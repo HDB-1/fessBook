@@ -12,6 +12,8 @@ const pug = require('pug');
 const blogClass = require('./blogPostClass');
 const path = require('path');
 
+const database = './database.json'; // for calling in our write-to-json scripts.
+
 app.use(express.static("public"));
 // app.use(express.static("views"));
 
@@ -25,6 +27,7 @@ app.engine('pug', require('pug').renderFile);
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
+
     res.render("homepage.pug")
 })
 
