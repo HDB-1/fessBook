@@ -24,7 +24,7 @@ function getArrayFromJson(filePath) {
 
 function getBlogPostByIndex(blogPostIndex, filePath){
     return getArrayFromJson(filePath)[blogPostIndex];
-}``
+}
 
 function savePostToJson(blogObject, filePath){ //adds completed object to json file.
     let currentJsonInfo = getArrayFromJson(filePath);
@@ -32,9 +32,17 @@ function savePostToJson(blogObject, filePath){ //adds completed object to json f
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
 }
 
-function reactToBlogPost(blogPostIndex, filePath, reaction){
+function reactToBlogPost(blogPostIndex, filePath, reqBodyInfo){ //pass req.body in to check for existence of likes, dislikes, laughs
     let currentJsonInfo = getArrayFromJson(filePath);
-    currentJsonInfo[blogPostIndex].reactions[reaction] += 1;
+    if(reqBodyInfo.dislike){
+        currentJsonInfo[blogPostIndex].reactions.dislike++;
+    }
+    if(reqBodyInfo.like){
+        currentJsonInfo[blogPostIndex].reactions.like++;
+    }
+    if(reqBodyInfo.laugh){
+        currentJsonInfo[blogPostIndex].reactions.laugh++;
+    }
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
 }
 
