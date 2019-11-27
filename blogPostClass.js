@@ -7,7 +7,7 @@ class BlogPost{
 
         this.textBody = textBody;
         this.title = title;
-        this.reactions = {'laugh': 0, 'smile': 0, 'cry': 0};
+        this.reactions = {'laugh': 0, 'dislike': 0, 'like': 0};
         this.comments = [];
         this.gif = gif;
         this.url = `/posts/${this.title}`
