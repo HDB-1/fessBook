@@ -32,6 +32,6 @@ $(document).ready(function () {
         $("#blogPostContainer").append(appendButtonHtmlGenerator("like", num));
         $("#blogPostContainer").append(appendButtonHtmlGenerator("dislike", num));
         $("#blogPostContainer").append(appendButtonHtmlGenerator("laugh", num));
-        $("#comment_form").attr("action", `comment/${num}`);
+        $("#comment_form").attr("action", `views/comment/${num}`);
     })
 });

@@ -1,44 +1,43 @@
 [
     {
-        "textBody": "1235780-",
-        "title": "TEST POST 1",
+        "textBody": "writing 1",
+        "title": "test 1",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [
-            "banana"
+            "doop"
         ],
         "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0b99bf1586bbb679ef01ffe97123b56c6fe1e9b03&rid=giphy.gif",
-        "url": "/posts/TEST POST 1"
+        "url": "/posts/test 1"
     },
     {
-        "textBody": "QWGFDHSRTEAGFSHD",
-        "title": "test post 2",
+        "textBody": "writing 2",
+        "title": "test 2 ",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
-        "comments": [
-            "comment NOT for testing"
-        ],
+        "comments": [],
         "gif": "https://media0.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0d0704b8a24c3ba1873236069453609f7b5bc6b3b&rid=giphy.gif",
-        "url": "/posts/test post 2"
+        "url": "/posts/test 2 "
     },
     {
-        "textBody": "sdfbOIDFNASDKJ",
-        "title": "TEST POST 3",
+        "textBody": "writing 3",
+        "title": "test 3 ",
         "reactions": {
             "laugh": 0,
             "smile": 0,
             "cry": 0
         },
         "comments": [
-            "comment for testing"
+            "woop",
+            "doop"
         ],
         "gif": "https://media3.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e05272a04a460c29167de3e2915cdc26fd22f6a39f&rid=giphy-downsized.gif",
-        "url": "/posts/TEST POST 3"
+        "url": "/posts/test 3 "
     }
 ]
