@@ -7,7 +7,7 @@ class BlogPost{
 
         this.textBody = textBody;
         this.title = title;
-        this.reactions = {'laugh': 0, 'smile': 0, 'cry': 0};
+        this.reactions = {'laugh': 0, 'dislike': 0, 'like': 0};
         this.comments = [];
         this.gif = gif;
         this.url = `/posts/${this.title}`
@@ -42,19 +42,14 @@ class BlogPost{
 //Then, axios.post to the /postdata route defined below.
 
 
-let testPost = new BlogPost('testingConstructor', 'blahblah');
+// let testPost = new BlogPost('testingConstructor', 'blahblah');
+// console.log(testPost);
 
+// testPost.reactToPost("laugh")
 
-console.log(testPost);
+// testPost.addComment("first comment here")
+// testPost.addComment("second comment here")
 
-testPost.reactToPost("laugh")
-testPost.reactToPost("laugh")
-testPost.reactToPost("laugh")
-
-testPost.addComment("first comment here")
-testPost.addComment("second comment here")
-
-
-console.log(testPost);
+// console.log(testPost);
 
 module.exports = {BlogPost};
