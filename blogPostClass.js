@@ -3,14 +3,14 @@
 const fs = require('fs')
 
 class BlogPost{
-    constructor(textBody, title, gif){
-
+    constructor(id, textBody, title, gif){
+        this.id = id;
         this.textBody = textBody;
         this.title = title;
         this.reactions = {'laugh': 0, 'dislike': 0, 'like': 0};
         this.comments = [];
         this.gif = gif;
-        this.url = `/posts/${this.title}`
+        this.url = `/${this.id}`
         
     }
 
