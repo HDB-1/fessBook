@@ -303,7 +303,12 @@
             "smile": 0,
             "cry": 0
         },
-        "comments": [],
+        "comments": [
+            "wednesday test comment",
+            "wednesday COMMENT 2",
+            "COMMENT 3",
+            "comment4 testttttt"
+        ],
         "gif": "https://media3.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0585837cd1d64e25ba4ad0514fae9189918857db5&rid=giphy.gif",
         "url": "/posts/title2"
     },

@@ -74,7 +74,7 @@ app.get("/posts/:index", urlencodedParser, (req, res) => {
 
 });
 
-app.post("/views/comment/:index", urlencodedParser, (req, res) => {
+app.post("/posts/:index", urlencodedParser, (req, res) => {
     debugger
     fs.readFile("./database.json", (err, data) => {
         if (err) {
