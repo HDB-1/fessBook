@@ -41,6 +41,14 @@ html(lang='en')
                a.nav-item.nav-link.view5.active(href='/random') Random blog
       br
       #blogPostContainer
+         .post
+      strong
+        h4=title
+      br
+      p=textBody
+      br
+   
+      img(src=gifUrl)
       br
       form#comment_form(method='POST')
          div

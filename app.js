@@ -43,7 +43,13 @@ app.get('/views/:index', (req, res) =>
 );
 
 app.get('/random', (req, res) => {
-    res.render('random');
+    let url = "https://images.unsplash.com/photo-1562886877-0be0db6aba84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80";
+    const blogPost = {
+        title: "This is a title",
+        textBody: "Blog dsbcbd",
+        gifUrl: url
+    }
+    res.render('random', blogPost);
 
 
 });
