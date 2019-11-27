@@ -241,7 +241,9 @@
             "smile": 0,
             "cry": 0
         },
-        "comments": [],
+        "comments": [
+            "testing wednesday"
+        ],
         "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e02bc4f9cd6c58a925b51edad5b1ea07aa4325e676&rid=giphy.gif",
         "url": "/posts/3f"
     },
@@ -313,7 +315,9 @@
             "smile": 0,
             "cry": 0
         },
-        "comments": [],
+        "comments": [
+            "testing 1234567898543"
+        ],
         "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0d5aa8cd8df059fa670af302a1ac1ba57c8ceb21a&rid=giphy.gif",
         "url": "/posts/example"
     }

@@ -18,6 +18,7 @@ $(document).ready(function () {
         let title = postArray[num].title;
         //adding stuff here ------------------------
         let gif = postArray[num].gif;
+        let comment = postArray[num].comments[0];
 
         let gifHtml;
         if (gif.length > 2) {
@@ -26,9 +27,11 @@ $(document).ready(function () {
             gifHtml = "";
         }
 
-        $("#blogPostContainer").append(`<div class="post">  ${title}  <br> ${textBody} <br> ${gifHtml} </div>`)
+        $("#blogPostContainer").append(`<div class="post">  ${title}  <br> ${textBody} <br> ${gifHtml} <br> ${comment}</div>`)
         $("#blogPostContainer").append(appendButtonHtmlGenerator("like", num));
         $("#blogPostContainer").append(appendButtonHtmlGenerator("dislike", num));
         $("#blogPostContainer").append(appendButtonHtmlGenerator("laugh", num));
+        $("#comment_form").attr("action", `comment/${num}`);
+
     })
 });
