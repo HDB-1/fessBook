@@ -334,5 +334,82 @@
         ],
         "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0d5aa8cd8df059fa670af302a1ac1ba57c8ceb21a&rid=giphy.gif",
         "url": "/posts/example"
+    },
+    {
+        "textBody": "",
+        "title": "",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0bcea53c7944c18967492061192d8d67eb1ce5127&rid=giphy.gif",
+        "url": "/posts/"
+    },
+    {
+        "textBody": "2pm test ieuhweiweivuhewriuvhcwrv",
+        "title": "2pm test",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [
+            "comment 1 test",
+            "testing 2",
+            "3",
+            "COMMMENT test 44444"
+        ],
+        "gif": "https://media1.giphy.com/media/26FPpSuhgHvYo9Kyk/giphy.gif?cid=b7d3a9e09bb7ae6986149c701ea80c72eb2261d946fb5b8a&rid=giphy.gif",
+        "url": "/posts/2pm test"
+    },
+    {
+        "textBody": "",
+        "title": "",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e060d87ebb1ae85b69e1b3e5913ab86bbe4f69c58c&rid=giphy-downsized.gif",
+        "url": "/posts/"
+    },
+    {
+        "textBody": "",
+        "title": "",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/"
+    },
+    {
+        "textBody": "",
+        "title": "",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media1.giphy.com/media/jUwpNzg9IcyrK/giphy.gif?cid=b7d3a9e00f3da664649a66d5ba781de512f3f2ededee585c&rid=giphy.gif",
+        "url": "/posts/"
+    },
+    {
+        "textBody": "vsdvsdv",
+        "title": "sfgewsfhesd",
+        "reactions": {
+            "laugh": 0,
+            "smile": 0,
+            "cry": 0
+        },
+        "comments": [],
+        "gif": "https://media1.giphy.com/media/26FPpSuhgHvYo9Kyk/giphy.gif?cid=b7d3a9e0ad38544af6d32e2af7983c553b121a7b108cd4cc&rid=giphy.gif",
+        "url": "/posts/sfgewsfhesd"
     }
 ]
