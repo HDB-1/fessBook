@@ -27,6 +27,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- add cxsss -->
     <script src="/js/blog.js"></script>
+    <link href="/css/blog.css" type="text/css" rel="stylesheet">
+
     <title>fessBook Blog</title>
 </head>
 
@@ -41,22 +43,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/blog">Blog</a>
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="/blog">Blog</a>
                 <a class="nav-item nav-link view5" href="/random">Random blog</a>
             </div>
         </div>
     </nav>
-
+    <br>
 
     <form method="POST">
         <textarea id="blog_title" name="blog_title" maxlength="20" value="" placeholder="Blog title..."></textarea><br>
 
         <textarea id="textareaChars" maxlength="140" rows="5" cols="75" placeholder="Type your blog here..."
-            name="textBody"></textarea>
-        <span id="chars">140</span> characters remaining
+            name="textBody"></textarea> <br>
+        <p class="wow"><span id="chars">140</span> characters remaining</p>
         
-        <br>
+        <br> <br>
         <div class="gif_form">
             <input type="radio" name="gif" id="minion" required>
             <label for="minion" class="gif_form_label">

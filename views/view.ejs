@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/css/view.css" type="text/css" rel="stylesheet">
     <!-- Font for Logo -->
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <!-- LOGO CSS -->
@@ -42,25 +42,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="/blog">Blog</a>
+                <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link " href="/blog">Blog</a>
                 <a class="nav-item nav-link view5" href="/random">Random blog</a>
             </div>
         </div>
     </nav>
-
+    <br>
     <div id="blogPostContainer"></div>
-    
+
+    <br>
+
     <form id="comment_form" method="POST">
         <div>
             <input type="text" name="comment" id="comment" placeholder="Comment" value="">
             <button type="submit" id="comment_button">Post Comment</button>
             <br>
-            <br>
             <p id="logged_comment"></p>
         </div>
     </form>
-    <br>
     <br>
     <h4>Comments:</h4>
     <div id="comment_thread"></div>
