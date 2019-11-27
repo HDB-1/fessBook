@@ -42,19 +42,14 @@ class BlogPost{
 //Then, axios.post to the /postdata route defined below.
 
 
-let testPost = new BlogPost('testingConstructor', 'blahblah');
+// let testPost = new BlogPost('testingConstructor', 'blahblah');
+// console.log(testPost);
 
+// testPost.reactToPost("laugh")
 
-console.log(testPost);
+// testPost.addComment("first comment here")
+// testPost.addComment("second comment here")
 
-testPost.reactToPost("laugh")
-testPost.reactToPost("laugh")
-testPost.reactToPost("laugh")
-
-testPost.addComment("first comment here")
-testPost.addComment("second comment here")
-
-
-console.log(testPost);
+// console.log(testPost);
 
 module.exports = {BlogPost};
