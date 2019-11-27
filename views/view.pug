@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+   // This is the page where we view a post
+   head
+      meta(charset='UTF-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+      link(href='/css/view.css', type='text/css', rel='stylesheet')
+      // Font for Logo
+      link(href='https://fonts.googleapis.com/css?family=Neucha&display=swap', rel='stylesheet')
+      // LOGO CSS
+      link(href='/css/logo.css', type='text/css', rel='stylesheet')
+      link(href='/css/view.css', type='text/css', rel='stylesheet')
+      link(href='/css/reactions.css', type='text/css', rel='stylesheet')
+      script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+      script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+      script(src='https://unpkg.com/axios/dist/axios.min.js')
+      // Font Awesome
+      script(src='https://kit.fontawesome.com/dc5f3f90a7.js', crossorigin='anonymous')
+      script(src='/js/gif.js')
+      script(src='/js/view.js')
+      title fessBook
+   body
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+         a.navbar-brand(href='/')
+            p.logo
+               | fess
+               span.book BooK
+         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+         #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+               a.nav-item.nav-link(href='/')
+                  | Home 
+                  span.sr-only (current)
+               a.nav-item.nav-link(href='/blog') Blog
+               a.nav-item.nav-link.view5(href='/random') Random blog
+      main
+         #blogPostContainer
+         br
+         form#reaction_form(method='POST')
+            button#like-button.reaction-button(type='submit', name='like', value='like')
+               i.fas.fa-heart
+               span#like-counter.badge.badge-light
+            button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
+               i.fas.fa-thumbs-down
+               span#dislike-counter.badge.badge-light
+            button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
+               i.fas.fa-laugh-squint
+               span#laugh-counter.badge.badge-light
+         form#comment_form(method='POST')
+            div
+               input#comment(type='text', name='comment', placeholder='Comment', value='')
+               button#comment_button(type='submit') Post Comment
+               br
+               p#logged_comment
+         br
+         h4 Comments:
+         #comment_thread
