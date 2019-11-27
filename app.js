@@ -7,7 +7,7 @@ const axios = require('axios');
 const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
-const ejs = require('ejs');
+const pug = require('pug');
 
 const blogClass = require('./blogPostClass');
 const path = require('path');
@@ -23,16 +23,16 @@ var urlencodedParser = bodyParser.urlencoded({
 })
 
 app.set('views', `${__dirname}/views`)
-app.engine('ejs', require('ejs').renderFile);
-app.set('view engine', 'ejs');
+app.engine('pug', require('pug').renderFile);
+app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-    
-    res.render("homepage.ejs")
+
+    res.render("homepage.pug")
 })
 
 app.get('/blog', (req, res) => {
-    res.render("blog.ejs")
+    res.render("blog.pug")
 })
 
 app.post('/newpost/:id', urlencodedParser, (req, res) => {
@@ -46,7 +46,13 @@ app.get('/views/:index', (req, res) =>
 );
 
 app.get('/random', (req, res) => {
-    res.render('random');
+    let url = "https://images.unsplash.com/photo-1562886877-0be0db6aba84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80";
+    const blogPost = {
+        title: "This is a title",
+        textBody: "Blog dsbcbd",
+        gifUrl: url
+    }
+    res.render('random', blogPost);
 
 
 });
