@@ -11,3 +11,7 @@
     border-radius: 5px;
     padding: 1px 2px;
   }
+
+  #comment_thread {
+    border: 2px solid black;
+  }

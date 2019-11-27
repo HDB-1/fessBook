@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const axios = require('axios');
+const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -12,32 +13,34 @@ const blogClass = require('./blogPostClass');
 const path = require('path');
 
 app.use(express.static("public"));
-app.use(express.static("views"));
+// app.use(express.static("views"));
 
 // app.use(bodyParser.json());
-var urlencodedParser = bodyParser.urlencoded({ extended: false }) 
+var urlencodedParser = bodyParser.urlencoded({
+    extended: false
+})
 
 app.set('views', `${__dirname}/views`)
 app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => { 
-    res.render("homepage.ejs") 
-    })
+app.get('/', (req, res) => {
+    res.render("homepage.ejs")
+})
 
-app.get('/blog', (req, res) => { 
-    res.render("blog.ejs") 
-    })
+app.get('/blog', (req, res) => {
+    res.render("blog.ejs")
+})
 
-app.post('/newpost/:id', urlencodedParser, (req, res) => { 
+app.post('/newpost/:id', urlencodedParser, (req, res) => {
     let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, req.body.gif); //creates the object - consider moving to blog.js
     blogPost.archivePost();
     res.redirect("/")
 });
 
-app.get('/views/:index', (req, res) => 
+app.get('/views/:index', (req, res) =>
     res.render('view')
-    );
+);
 
 app.get('/random', (req, res) => {
     res.render('random');
@@ -45,16 +48,68 @@ app.get('/random', (req, res) => {
 
 });
 
-app.get('/posts', (req, res) => {
-    res.sendFile(path.join(__dirname, "database.json"));
+app.get('/posts', urlencodedParser, (req, res) => {
+    res.sendFile(path.join(__dirname, "database.json"))
+    //console.log(res);
 }); // Do not touch - archives all posts for requesting.
 
-app.post("/posts/:title", (req, res) => {
-  res.render(); // need method of rendering posts title 
+app.get("/posts/:index", urlencodedParser, (req, res) => {
+    fs.readFile("./database.json", (err, data) => {
+        if (err) {
+            console.error(err)
+        } else {
+            console.log("File has been read")
+            let jsonArray = JSON.parse(data);
+            let index = req.params.index;
+            try {
+                res.json(jsonArray[index]);
+            } catch {
+                res.json({
+                    error: `post ${index} does not exists`
+                });
+            }
+        }
+    })
+    // need method of rendering posts title 
 
 });
 
+app.post("/views/comment/:index", urlencodedParser, (req, res) => {
+    debugger
+    fs.readFile("./database.json", (err, data) => {
+        if (err) {
+            console.error(err)
+        } else {
+            console.log("File has been read")
+            console.log(req.body.comment);
+            let jsonArray = JSON.parse(data);
+            let index = req.params.index;
+            let comment = req.body.comment;
+            console.log(jsonArray[index]);
+            let post_comment = jsonArray[index].comments
+            post_comment.push(comment);
+            console.log(jsonArray[index]);
+            fs.writeFile("./database.json", JSON.stringify(jsonArray, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
+            try {
+                // res.json(jsonArray[index]);
+                res.redirect(`/views/${index}`);
+                console.log(typeof post_comment);
+            } catch {
+                res.json({
+                    error: `post ${index} does not exists`
+                });
+            }
+        }
+    })
+    // need method of rendering posts title
+    //   res.send("hello!!!!!!!!!!!!!!!!!!!!");
+});
+
+/*
+axios.get('/posts').then((response) => {
+    console.log(response)
+}).catch((error) => console.log(error))
+*/
 
 // Listening to the server on port 8000
 app.listen(port, () => console.log(`Example listening on port #${port}! \n http://localhost:${port}`));
-
