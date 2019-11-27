@@ -14,11 +14,12 @@ $(document).ready(function () {
         let num = numberr;
         let textBody = postArray[num].textBody;
         let title = postArray[num].title;
+        let comments = postArray[num].comments;
 
         let gif = postArray[num].gif;
 
         let gifHtml;
-        if (gif) {
+        if (gif.length > 2) {
             gifHtml = `<img src="${gif}" />`;
         } else {
             gifHtml = "";
