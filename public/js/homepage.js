@@ -25,10 +25,12 @@ $(document).ready(function () {
             let postHtml = `<a href="views/${i}"><div class="post" id="blog${[i]}"> <strong> ${title} </strong> <br /> <p>${textBody}</p> <br /> ${gifHtml} </div></a>`;
             $("#blogPostContainer").append(postHtml)
 
-            // $("#blogPosts").append(`<div class="post" id="blog${[i]}">  ${title}  <br> ${textBody} <br> <button class="likeButton" id="likeButton_${i}>Like</button><button class="dislikeButton" id="dislikeButton_${i}>Dislike</button> <button class="laughterButton" id="laughterButton_${i}>Laugh</button> </div>`)
-
         }
-
+        let submittedPost = window.location.search.substring(1).split("=")[1];
+        console.log(submittedPost);
+        if(submittedPost === "true"){
+            $("#successfulPostAlert").toggle();
+        }
 
 
     });

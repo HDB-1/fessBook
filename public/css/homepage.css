@@ -8,9 +8,12 @@ div {
     border: 2px solid black;
 }
 
+#successfulPostAlert{
+    display: none;
+}
+=======
 #blogPostContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
