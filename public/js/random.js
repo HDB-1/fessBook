@@ -14,6 +14,7 @@ $(document).ready(function () {
         let num = numberr;
         let textBody = postArray[num].textBody;
         let title = postArray[num].title;
+        let comments = postArray[num].comments;
 
         let gif = postArray[num].gif;
 
