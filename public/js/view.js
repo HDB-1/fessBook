@@ -29,7 +29,7 @@ $(document).ready(function () {
         }
 
         $("#blogPostContainer").append(`<div class="post">  ${title}  <br> ${textBody} <br> ${gifHtml}</div>`)
-
+        //this should work...
         comments.forEach(comment => {
             $("#comment_thread").prepend(`${comment}<br>`);
         });
