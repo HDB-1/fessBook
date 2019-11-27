@@ -12,6 +12,8 @@ const ejs = require('ejs');
 const blogClass = require('./blogPostClass');
 const path = require('path');
 
+const database = './database.json'; // for calling in our write-to-json scripts.
+
 app.use(express.static("public"));
 // app.use(express.static("views"));
 

@@ -24,7 +24,7 @@ function getArrayFromJson(filePath) {
 
 function getBlogPostByIndex(blogPostIndex, filePath){
     return getArrayFromJson(filePath)[blogPostIndex];
-}
+}``
 
 function savePostToJson(blogObject, filePath){ //adds completed object to json file.
     let currentJsonInfo = getArrayFromJson(filePath);
@@ -36,6 +36,13 @@ function reactToBlogPost(blogPostIndex, filePath, reaction){
     let currentJsonInfo = getArrayFromJson(filePath);
     currentJsonInfo[blogPostIndex].reactions[reaction] += 1;
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
+}
+
+function addCommentToBlogPost(blogPostIndex, filePath, comment){
+    let currentJsonInfo = getArrayFromJson(filePath);
+    currentJsonInfo[blogPostIndex].comments.push(comment);
+    fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
+
 }
 
 
@@ -55,4 +62,4 @@ function reactToBlogPost(blogPostIndex, filePath, reaction){
 
 console.log(getBlogPostByIndex(2, './database.json'));
 
-reactToBlogPost(2, './database.json', "like");
+addCommentToBlogPost(2, './database.json', "this post is lit!")
