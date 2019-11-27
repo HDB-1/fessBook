@@ -25,6 +25,7 @@ app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
+    
     res.render("homepage.ejs")
 })
 
