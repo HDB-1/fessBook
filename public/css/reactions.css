@@ -1,4 +1,27 @@
-.reaction_button{
-    background-color: none;
+.reaction-button {
+    background: none;
     border: none;
+    transition: all .07s ease;
 }
+
+.reaction-button:hover {
+    transform: scale(1.1);
+}
+
+.reaction-button:focus {
+    outline: none;
+}
+
+
+.fa-heart{
+    color: #F24333;
+}
+.fa-laugh-squint{
+    color: #F3A712;
+}
+
+.fa-thumbs-down{
+    color: #006494; 
+}
+
+
