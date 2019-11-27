@@ -52,19 +52,19 @@
     <br>
 
     <form method="POST">
-        <textarea id="blog_title" name="blog_title" maxlength="20" value="" placeholder="Blog title..."></textarea><br>
+        <textarea id="blog_title" name="blog_title" maxlength="20" value="" placeholder="Blog title..." required></textarea><br>
 
         <textarea id="textareaChars" maxlength="140" rows="5" cols="75" placeholder="Type your blog here..."
 
-            name="textBody"></textarea>
+            name="textBody" required></textarea>
         <span id="chars">140</span> characters remaining
 
         <br>
         <br>
-        <input type="submit" id="submitBtn" value="Show GIFs">
+        <input type="button" id="submitBtn" value="Show GIFs">
 
         <div class="gif_form">
-            <input type="radio" name="gif" id="minion" required>
+            <input type="radio" name="gif" id="minion">
             <label for="minion" class="gif_form_label">
                 <img class="gif" id="minion_gif">
             </label>
@@ -130,7 +130,7 @@
             </label>
 
 
-            <input type="radio" name="gif" id="no_gif">
+            <input type="radio" name="gif" id="no_gif" checked>
             <label for="no_gif" class="gif_form_label">
                 <p>No gif</p>
             </label>
