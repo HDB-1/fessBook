@@ -35,7 +35,7 @@ app.get('/blog', (req, res) => {
 app.post('/newpost/:id', urlencodedParser, (req, res) => {
     let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, req.body.gif); //creates the object - consider moving to blog.js
     blogPost.archivePost();
-    res.redirect("/")
+    res.redirect("/?submittedpost=true")
 });
 
 app.get('/views/:index', (req, res) =>
