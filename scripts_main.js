@@ -32,6 +32,12 @@ function savePostToJson(blogObject, filePath){ //adds completed object to json f
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
 }
 
+function reactToBlogPost(blogPostIndex, filePath, reaction){
+    let currentJsonInfo = getArrayFromJson(filePath);
+    currentJsonInfo[blogPostIndex].reactions[reaction] += 1;
+    fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
+}
+
 
 // console.log(getArrayFromJson('./database.json'));
 
@@ -39,6 +45,14 @@ function savePostToJson(blogObject, filePath){ //adds completed object to json f
 
 // console.log(getBlogPostByIndex(0, './database.json'));
 
-console.log("printing indiv obj");
 
-savePostToJson(sampleBlogObject, './database.json');
+
+// savePostToJson(sampleBlogObject, './database.json');
+
+// console.log(getBlogPostByIndex(2, './database.json'));
+
+// reactToBlogPost(2, './database.json', 'laugh');
+
+console.log(getBlogPostByIndex(2, './database.json'));
+
+reactToBlogPost(2, './database.json', "like");

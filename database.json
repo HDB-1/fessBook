@@ -32,9 +32,9 @@
         "textBody": "This is a hard coded sample blog",
         "titl": "Blog title SAMPLE",
         "reactions": {
-            "laugh": 0,
+            "laugh": 8,
             "dislike": 0,
-            "like": 0
+            "like": 6
         },
         "comments": [],
         "gif": "https://media3.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e02d4a8d59b0c9ec8bf61e7d733879ea54875988e6&rid=giphy-downsized.gif",
