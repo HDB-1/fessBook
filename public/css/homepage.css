@@ -1,23 +1,62 @@
 /* CSS for homepage */
-div {
-    color: black;
+
+#successfulPostAlert{
+    display: none;
 }
+
 
 body{
     background-color: rgb(225, 237, 250);
 }
-
 .post{
     margin: 10px;
     border: 2px solid black;
+
+.body_feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-#successfulPostAlert{
-    display: none;
+.feed_centre {
+    width: 45%;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 #blogPostContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+    border: 2px solid black;
+}
+
+.blogTitle {
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 34px;
+}
+
+.blogText {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+}
+
+img {
+    width: 400px;
+    max-height: 380px;
+}
+
+.emojis {
+    margin: 14px;
+}
+
+#reaction_form {
+    display: flex;
+    flex-direction: row;
 }
