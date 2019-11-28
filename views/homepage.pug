@@ -45,7 +45,7 @@ html(lang='en')
           div 
             h4=item.title
             p=item.textBody
-            img(src=item.gif, alt="add later")
+            img(src=item.gif, alt=item.gifalt)
             form#reaction_form(method='POST')
               button#like-button.reaction-button(type='submit', name='like', value='like')
                  i.fas.fa-heart

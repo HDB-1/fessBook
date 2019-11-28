@@ -1,87 +1,21 @@
 [
     {
         "id": 0,
-        "textBody": "4rfcqu3nwierycfghir4gno8qehruxf",
-        "title": "test 1",
+        "textBody": "Hey",
+        "title": "Hey",
         "reactions": {
-            "laugh": 16,
-            "dislike": 2,
-            "like": 8
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
         },
-        "comments": [
-            "comment 1",
-            "comment 2",
-            "comment 3",
-            "comment 4",
-            "comment 5",
-            "testing 1234567898543",
-            "comment 5"
-        ],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0a7466ba68f067ad88613e2a662535cf6e76be5f0&rid=giphy.gif",
+        "comments": [],
+        "gif": "https://media1.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy-downsized.gif?cid=b7d3a9e0bf4c7e753b37cce5e5f9a0b71b7dc188f574bad5&rid=giphy-downsized.gif*angry_little_girl",
         "url": "/posts/0"
     },
     {
         "id": 1,
-        "textBody": "gkveycbieruyghnowrimughowruvhbwre",
-        "title": "title 2",
-        "reactions": {
-            "laugh": 6,
-            "dislike": 2,
-            "like": 2
-        },
-        "comments": [
-            "comment 1",
-            "comment 2",
-            "comment 5"
-        ],
-        "gif": "https://media0.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0d206818a7638d1affebbd15798ca3f8a9060f0a6&rid=giphy.gif",
-        "url": "/posts/1"
-    },
-    {
-        "id": 2,
-        "textBody": "hrvnwo8eruchgnowvtcyn928457ct97g4wfr",
-        "title": "test 3",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "https://media0.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e0ba2f0d968609689bbcdfb306269e4596ac5078f8&rid=giphy-downsized.gif",
-        "url": "/posts/2"
-    },
-    {
-        "id": 3,
-        "textBody": "eilugbibg34ic78tn4987ocg",
-        "title": "testing now",
-        "reactions": {
-            "laugh": 4,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [
-            "testin gcomment"
-        ],
-        "gif": "https://media2.giphy.com/media/BlVnrxJgTGsUw/giphy.gif?cid=b7d3a9e03047274c0532ecf8f0ca61429c4a6924014621e2&rid=giphy.gif",
-        "url": "/posts/3"
-    },
-    {
-        "id": 4,
-        "textBody": "h",
-        "title": "h",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0ce4eabad6d82b8f732544e274f31f08310fc80d9&rid=giphy.gif",
-        "url": "/posts/4"
-    },
-    {
-        "id": 5,
-        "textBody": "h",
-        "title": "j",
+        "textBody": "fewnfffffffffffffff",
+        "title": "fnvfn",
         "reactions": {
             "laugh": 0,
             "dislike": 0,
@@ -89,6 +23,6 @@
         },
         "comments": [],
         "gif": "on",
-        "url": "/posts/5"
+        "url": "/posts/1"
     }
 ]

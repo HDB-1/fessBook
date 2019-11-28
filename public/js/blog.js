@@ -59,8 +59,7 @@ $(document).ready(() => {
        let url = item.images.downsized.url;
        $(imgIds[index]).attr("src", url)
        $(imgIds[index]).attr("alt", altTags[index])
-       $(radioInputIds[index]).val(url)
-       $(radioInputIds[index]).val(url)
+       $(radioInputIds[index]).val(`${url}*${altTags[index]}`)
       
        index++;
 });

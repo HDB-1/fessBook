@@ -50,6 +50,7 @@ app.get('/blog', (req, res) => {
 })
 
 app.post('/newpost/:token', urlencodedParser, (req, res) => {
+    console.log(req)
     let blogPost = createPost(req.body.textBody, req.body.blog_title, req.body.gif);
     savePostToJson(blogPost, database);
     res.redirect("/?submittedpost=true")
