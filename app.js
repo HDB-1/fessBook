@@ -39,8 +39,10 @@ app.engine('pug', require('pug').renderFile);
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   let allPostsInfo = getArrayFromJson(database);
-   res.render("homepage.pug", {allPostsInfo: allPostsInfo})
+    let allPostsInfo = getArrayFromJson(database);
+    res.render("homepage.pug", {
+        allPostsInfo: allPostsInfo
+    })
 })
 
 app.get('/blog', (req, res) => {
@@ -55,6 +57,7 @@ app.post('/newpost/:token', urlencodedParser, (req, res) => {
 
 app.get('/posts/:index', (req, res) => {
     let blogPostInfo = getBlogPostByIndex(req.params.index, database);
+    // let route = `/comment/${index}`
     res.render('view', blogPostInfo)
 });
 
@@ -101,66 +104,19 @@ app.get('/posts', urlencodedParser, (req, res) => {
 
 // EDIT --------------------------------------------
 app.post("/comment/:index", urlencodedParser, (req, res) => {
-
-// console.log("File has been read")
-// console.log(req.body.comment);
-// let jsonArray = JSON.parse(data);
-let index = req.params.index;
-// let comment = req.body.comment;
-let comment = "test comment thursday";
-addCommentToBlogPost(index, database, comment);
-// console.log(jsonArray[index]);
-// let post_comment = jsonArray[index].comments
-// post_comment.push(comment);
-// console.log(jsonArray[index]);
-// fs.writeFile("./database.json", JSON.stringify(jsonArray, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
-// try {
-    // res.json(jsonArray[index]);
-    res.redirect(`/${index}`);
-    // console.log(typeof post_comment);
-// } catch {
-//     res.json({
-//         error: `post ${index} does not exists`
-//     });
-// }
-// }
-// })
+    let index = req.params.index;
+    let comment = req.body.comment;
+    addCommentToBlogPost(index, database, comment);
+    res.redirect(`/posts/${index}`);
 });
 
-app.post("/views/reaction/:index", urlencodedParser, (req, res) => {
-    debugger
-    fs.readFile("./database.json", (err, data) => {
-        if (err) {
-            console.error(err)
-        } else {
-            console.log("File has been read")
-            console.log("req body ------START-------")
-            console.log(req.body.dislike)
-            console.log(req.body.like)
-            console.log(req.body.laugh)
-            console.log("req body -------END-------")
-            //console.log(req.body.comment);
-            let jsonArray = JSON.parse(data);
-            let index = req.params.index;
-            if (req.body.dislike) {
-                jsonArray[index].reactions.dislike++;
-            };
-            if (req.body.laugh) {
-                jsonArray[index].reactions.laugh++;
-            };
-            if (req.body.like) {
-                jsonArray[index].reactions.like++;
-            };
-            fs.writeFile("./database.json", JSON.stringify(jsonArray, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
-            try {
-                res.redirect(`/views/${index}`);
-            } catch {
-                res.json({
-                    error: `post ${index} does not exists`
-                });
-            }
-        }
-    })
+app.post("/reaction/:index", urlencodedParser, (req, res) => {
+    console.log(req.body.dislike);
+    console.log(req.body.like);
+    console.log(req.body.laugh);
+    let index = req.params.index;
+    reactToBlogPost(index, database, req.body);
+    res.redirect(`/posts/${index}`);
 });
 
 app.get('*', function (req, res) {
