@@ -7,10 +7,7 @@ const axios = require('axios');
 const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
-const scripts = require('./scripts_main')
 const pug = require('pug');
-
-const blogClass = require('./blogPostClass');
 const path = require('path');
 
 const database = './database.json'; // for calling in our write-to-json scripts.

@@ -1,6 +1,18 @@
 [
     {
         "id": 0,
+        "textBody": "ggggggggggggggggg",
+        "title": "hhh",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "url": "/posts/0"
+    },
+    {
+        "id": 1,
         "textBody": "Hey",
         "title": "Hey",
         "reactions": {
@@ -9,20 +21,20 @@
             "like": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy-downsized.gif?cid=b7d3a9e0bf4c7e753b37cce5e5f9a0b71b7dc188f574bad5&rid=giphy-downsized.gif*angry_little_girl",
-        "url": "/posts/0"
+        "gif": "https://media0.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e0a6f4bf2ecea7f56a9a751a991be4dd091d21c225&rid=giphy.gif",
+        "gifalt": "minion_laugh",
+        "url": "/posts/1"
     },
     {
-        "id": 1,
-        "textBody": "fewnfffffffffffffff",
-        "title": "fnvfn",
+        "id": 2,
+        "textBody": "hhhhhhhhhhhhh",
+        "title": "h",
         "reactions": {
             "laugh": 0,
             "dislike": 0,
             "like": 0
         },
         "comments": [],
-        "gif": "on",
-        "url": "/posts/1"
+        "url": "/posts/2"
     }
 ]
