@@ -37,34 +37,31 @@ html(lang='en')
                   span.sr-only (current)
                a.nav-item.nav-link(href='/blog') Blog
                a.nav-item.nav-link.view5(href='/random') Random blog
-      main
-         #blogPostContainer
-         br
-         h3=title
-         p.blogPostTextBody=textBody
-         img(src=gif, alt=gifalt)
-         p Posted at #{timeStamp}
-        
-<!-- Likes and dislikes form -->
-
-         form#reaction_form(action= '/reaction/'+id, method='POST')
-            button#like-button.reaction-button(type='submit', name='like', value='like')
-               i.fas.fa-heart
-               span#like-counter.badge.badge-light=reactions.like
-            button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
-               i.fas.fa-thumbs-down
-               span#dislike-counter.badge.badge-light=reactions.dislike
-            button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
-               i.fas.fa-laugh-squint
-               span#laugh-counter.badge.badge-light=reactions.laugh
-         form#comment_form(action= '/comment/'+id, method='POST')
-            div
-               input#comment(type='text', name='comment', placeholder='Comment', value='')
-               button#comment_button(type='submit') Post Comment
-               br
+      div.page
+         main
+            h3=title
+            p.blogPostTextBody=textBody
+            img(src=gif, alt=gifalt)
+            p Posted at #{timeStamp}
+            form#reaction_form(action= '/reaction/'+id, method='POST')
+               button#like-button.reaction-button(type='submit', name='like', value='like')
+                  i.fas.fa-heart
+                  span#like-counter.badge.badge-light=reactions.like
+               button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
+                  i.fas.fa-thumbs-down
+                  span#dislike-counter.badge.badge-light=reactions.dislike
+               button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
+                  i.fas.fa-laugh-squint
+                  span#laugh-counter.badge.badge-light=reactions.laugh
+         aside
+            div.comment-form-section
+               form#comment_form(action= '/comment/'+id, method='POST')
+                  textarea#comment(type='text', name='comment', placeholder='Comment', value='')
+                  button.btn.btn-dark#comment_button(type='submit') Post Comment
                p#logged_comment
-         h4 Comments:
-         div(id= "commentsContainer")
-         - var counter=(comments.length - 1)
-         while counter >= 0
-            p=comments[counter--]
+            h4 Comments:
+            div(id="commentsContainer")
+               - var counter=(comments.length - 1)
+               while counter >= 0
+                  div.comment-box
+                     p=comments[counter--]

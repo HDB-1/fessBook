@@ -1,20 +1,109 @@
 /* CSS for view a post page */
+html, body{
+    width: 100vw;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color:#020100
+}
 
-.post {
+h4 {
+    color: #547AA5;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+ 
+    max-width: 400px;
+    padding: 10px;
+    
 }
+
+aside{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    min-width: 355px;
+    
+     
+}
+
+
+img {
+    height: auto;
+    width: 320px;
+}
+
+
+
 
 .giphy {
     width: 100%;
 }
 
-.blogPostTextBody{
-    color: red;
+#commentsContainer{
+    min-height: 80vh;
+    overflow-wrap: break-word ;
+    word-break: break-all;
+    padding: 1px;
+    
 }
 
-#commentsContainer{
-    border: 2px solid black;
+.comment-box{
+    border: solid 1px #547AA5;
+    background-color: #FFFFFF ;
+    padding: 8px;
+    margin: 8px;
+    min-height: 50px;
+    border-radius: 5px;
+}
+.comment-form-section{
+    display: block;
+    margin: 8px;
+    padding: 8px;
+    height: 300px;
+    min-width: 300px;
+    position: relative;
+}
+
+#comment{
+    width: 100%;
+    height: 60%;
+    min-width: 300px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+#comment_form {
+    padding: 10px;
+    margin: 10px;
+    overflow-wrap: break-word ;
+    word-break: break-all;
+    top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#comment_button{
+    padding: 10px;
+    margin: 10px;
+    overflow-wrap: break-word ;
+    word-break: break-all;
+    bottom: 0px;
+    position: relative;
+  
 }
