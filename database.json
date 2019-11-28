@@ -43,7 +43,7 @@
         "title": "test 3",
         "reactions": {
             "laugh": 0,
-            "dislike": 0,
+            "dislike": 2,
             "like": 0
         },
         "comments": [],
@@ -55,9 +55,9 @@
         "textBody": "eilugbibg34ic78tn4987ocg",
         "title": "testing now",
         "reactions": {
-            "laugh": 4,
-            "dislike": 0,
-            "like": 0
+            "laugh": 7,
+            "dislike": 2,
+            "like": 2
         },
         "comments": [
             "testin gcomment",
@@ -73,8 +73,8 @@
         "textBody": "reversallll",
         "title": "reversal test",
         "reactions": {
-            "laugh": 0,
-            "dislike": 0,
+            "laugh": 2,
+            "dislike": 6,
             "like": 0
         },
         "comments": [],
