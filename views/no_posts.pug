@@ -1,22 +1,36 @@
 doctype html
 html(lang='en')
-   // This is the page where we view a post
+   // This is the homepage
    head
       meta(charset='UTF-8')
       meta(name='viewport', content='width=device-width, initial-scale=1.0')
       link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+      link(href='/css/homepage.css', type='text/css', rel='stylesheet')
       // Font for Logo
       link(href='https://fonts.googleapis.com/css?family=Neucha&display=swap', rel='stylesheet')
-      link(href='/css/landing.css', type='text/css', rel='stylesheet')
       // LOGO CSS
+      link(href='/css/logo.css', type='text/css', rel='stylesheet')
+      link(href='/css/reactions.css', type='text/css', rel='stylesheet')
       script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
-      script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
       script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+      script(src='https://kit.fontawesome.com/dc5f3f90a7.js', crossorigin='anonymous')
       script(src='https://unpkg.com/axios/dist/axios.min.js')
+      script(src='/js/homepage.js')
       title fessBook
    body
-      div.background-image
-         h1 The best blog page in the whole wide edge of this classroom
-         a(class='button' href='./posts') 
-            button Enter
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+         a.navbar-brand(href='/posts')
+            p.logo
+               | fess
+               span.book BooK
+         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+         #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+               a.nav-item.nav-link.active(href='/posts')
+                  | Home 
+                  span.sr-only (current)
+               a.nav-item.nav-link(href='/blog') Blog
+               a.nav-item.nav-link.view5(href='/random') Random blog
+      p Oopsie daisy! Looks like there are no posts yet.

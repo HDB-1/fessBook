@@ -24,7 +24,7 @@ html(lang='en')
       title fessBook
    body
       nav.navbar.navbar-expand-md.navbar-dark.bg-dark
-         a.navbar-brand(href='/')
+         a.navbar-brand(href='/posts')
             p.logo
                | fess
                span.book BooK
@@ -32,7 +32,7 @@ html(lang='en')
             span.navbar-toggler-icon
          #navbarNavAltMarkup.collapse.navbar-collapse
             .navbar-nav
-               a.nav-item.nav-link(href='/')
+               a.nav-item.nav-link(href='/posts')
                   | Home 
                   span.sr-only (current)
                a.nav-item.nav-link(href='/blog') Blog
@@ -42,7 +42,8 @@ html(lang='en')
          br
          h3=title
          p.blogPostTextBody=textBody
-         img(src=gif, alt="to do later...")
+         img(src=gif, alt=gifalt)
+         p Posted at #{timeStamp}
         
 <!-- Likes and dislikes form -->
 
@@ -65,8 +66,8 @@ html(lang='en')
          br
          br
 
-
          h4 Comments:
          div(id= "commentsContainer")
-            for comment in comments
-               p=comment
+         - var counter=(comments.length - 1)
+         while counter >= 0
+            p=comments[counter--]
