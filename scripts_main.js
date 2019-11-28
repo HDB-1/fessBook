@@ -18,10 +18,10 @@ const createPost = (textBody, title, gifUrl) => {
         "gifalt": gifUrl.split("*")[1],
         "url": `/posts/${id}`
     }
+    if (obj.gif==="on"){
+        delete obj.gif;
+     }
     return obj;
-    // json.push(obj);
-    //     fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log(`Post ${id} has been created`))
-     
 }
 
 function getArrayFromJson(filePath) {
