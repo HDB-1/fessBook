@@ -19,3 +19,15 @@ body, html{
     background-attachment: fixed;
 
 }
+
+button {
+  
+}
+
+p {
+    position: absolute;
+    font-size: 8px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
