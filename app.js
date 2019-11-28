@@ -54,7 +54,7 @@ app.get('/random', (req, res) => {
     let json = getArrayFromJson(database);
     var count = Object.keys(json).length;
     if (count == 0) {
-        res.status(404).send("Oopsy daisy, there are no posts yet!");
+        res.status(404).render("no_posts");
     } else {
         let randomIndex = randomNumber(database);
         let blogPostInfo = getBlogPostByIndex(randomIndex, database);
