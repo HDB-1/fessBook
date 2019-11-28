@@ -28,7 +28,6 @@ app.engine('pug', require('pug').renderFile);
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-
     res.render("homepage.pug")
 })
 
@@ -36,7 +35,7 @@ app.get('/blog', (req, res) => {
     res.render("blog.pug")
 })
 
-app.post('/newpost', urlencodedParser, (req, res) => {
+app.post('/newpost/:token', urlencodedParser, (req, res) => {
     scripts.createPost(req.body.textBody, req.body.blog_title, req.body.gif); 
     res.redirect("/?submittedpost=true")
 });

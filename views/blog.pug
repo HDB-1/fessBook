@@ -35,7 +35,7 @@ html(lang='en')
                a.nav-item.nav-link.active(href='/blog') Blog
                a.nav-item.nav-link.view5(href='/random') Random blog
       br
-      form(method='POST')
+      form(action=route, method='POST')
          textarea#blog_title(name='blog_title', maxlength='20', value='', placeholder='Blog title...', required='')
          br
          textarea#textareaChars(maxlength='140', rows='5', cols='75', placeholder='Type your blog here...', name='textBody', required='')
