@@ -65,7 +65,9 @@ function randomNumber(filePath) {
     let numberr = Math.floor(Math.random() * count);
     return numberr;
 }
-
+function getBlogPostByIndex(blogPostIndex, filePath){
+    return getArrayFromJson(filePath)[blogPostIndex];
+} // get gif
 
 // exports.createPost = createPost;
 // exports.getArrayFromJson = getArrayFromJson;
