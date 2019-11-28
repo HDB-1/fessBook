@@ -49,6 +49,8 @@ html(lang='en')
                h4=allPostsInfo[counter].title
                p=allPostsInfo[counter].textBody
                img(src=allPostsInfo[counter].gif, alt=alt=allPostsInfo[counter].gifalt)
+               p Posted at #{allPostsInfo[counter].timeStamp}
+               
             form#reaction_form(method='POST' action='/homepagereaction/'+allPostsInfo[counter].id)
                button#like-button.reaction-button(type='submit', name='like', value='like')
                   i.fas.fa-heart

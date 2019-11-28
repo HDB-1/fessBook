@@ -1,1 +1,45 @@
-[]
+[
+    {
+        "id": 0,
+        "textBody": "work",
+        "title": "plssss",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/0",
+        "timeStamp": "14:41 on 28-11-2019"
+    },
+    {
+        "id": 1,
+        "textBody": "askjdkjsdkasdfyhdhafiodsafkdsakjsaldfasdkfjo;adsfjosdjf asdfj asldif asdifj asldfij dsafj adsflj sdalkf dsklf sladf lsadfj lsadfj adslk asdl",
+        "title": "lets go lets go",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "https://media1.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e037244057d9a8e1c9b37169fa41fe570fbae0f15c&rid=giphy-downsized.gif",
+        "gifalt": "popcorn_weird",
+        "url": "/posts/1",
+        "timeStamp": "14:41 on 28-11-2019"
+    },
+    {
+        "id": 2,
+        "textBody": "SADSREAF",
+        "title": "test time",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/2",
+        "timeStamp": "14:42 on 28-11-2019"
+    }
+]
