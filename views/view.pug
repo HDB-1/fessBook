@@ -40,16 +40,21 @@ html(lang='en')
       main
          #blogPostContainer
          br
+         h3=title
+         p.blogPostTextBody=textBody
+        
+<!-- Likes and dislikes form -->
+
          form#reaction_form(method='POST')
             button#like-button.reaction-button(type='submit', name='like', value='like')
                i.fas.fa-heart
-               span#like-counter.badge.badge-light
+               span#like-counter.badge.badge-light=reactions.like
             button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
-               i.fas.fa-thumbs-down
+               i.fas.fa-thumbs-down=reactions.dislike
                span#dislike-counter.badge.badge-light
             button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
                i.fas.fa-laugh-squint
-               span#laugh-counter.badge.badge-light
+               span#laugh-counter=reactions.laugh
          form#comment_form(method='POST')
             div
                input#comment(type='text', name='comment', placeholder='Comment', value='')
@@ -57,5 +62,10 @@ html(lang='en')
                br
                p#logged_comment
          br
+
+
          h4 Comments:
-         #comment_thread
+         div(id= "commentsContainer")
+            for comment in comments
+               p=comment
+            
