@@ -29,7 +29,7 @@ html(lang='en')
             span.navbar-toggler-icon
          #navbarNavAltMarkup.collapse.navbar-collapse
             .navbar-nav
-               a.nav-item.nav-link(href='/')
+               a.nav-item.nav-link(href='/posts')
                   | Home 
                   span.sr-only (current)
                a.nav-item.nav-link.active(href='/blog') Blog
@@ -86,7 +86,7 @@ html(lang='en')
                img#excited_gif.gif
             input#no_gif(type='radio', name='gif', checked='')
             label.gif_form_label(for='no_gif')
-               p No gif
+               p#no_gif No gif
          br
          br
          input#submitButton(type='submit', name='submitButton', value='Share')
