@@ -15,10 +15,11 @@ const createPost = (textBody, title, gifUrl) => {
         },
         "comments": [],
         "gif": gifUrl,
-        "url": `/blog/${id}`
+        "url": `/${id}`
     }
-    json.push(obj);
-        fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log(`Post ${id} has been created`))
+    return obj;
+    // json.push(obj);
+    //     fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log(`Post ${id} has been created`))
      
 }
 
@@ -59,7 +60,17 @@ function addCommentToBlogPost(blogPostIndex, filePath, comment){
 
 }
 
+function randomNumber(filePath) {
+    let json = getArrayFromJson(filePath);
+    var count = Object.keys(json).length;
+    let numberr = Math.floor(Math.random() * count);
+    return numberr;
+}
 
-exports.createPost = createPost;
-exports.getArrayFromJson = getArrayFromJson;
-exports.getBlogPostByIndex = getBlogPostByIndex;
+
+// exports.createPost = createPost;
+// exports.getArrayFromJson = getArrayFromJson;
+// exports.getBlogPostByIndex = getBlogPostByIndex;
+
+
+module.exports = {getArrayFromJson, getBlogPostByIndex, createPost, savePostToJson, reactToBlogPost, addCommentToBlogPost, randomNumber};
