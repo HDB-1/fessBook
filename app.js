@@ -39,10 +39,8 @@ app.engine('pug', require('pug').renderFile);
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-    // res.render("homepage.pug")
-    let allPostsInfo = getArrayFromJson(database);
-
-    res.send(allPostsInfo);
+   let allPostsInfo = getArrayFromJson(database);
+   res.render("homepage.pug", {allPostsInfo: allPostsInfo})
 })
 
 app.get('/blog', (req, res) => {
