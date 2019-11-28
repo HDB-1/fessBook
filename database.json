@@ -1,77 +1,8 @@
 [
     {
-        "id": 0,
-        "textBody": "Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 ",
-        "title": "BLOG POST 1",
-        "reactions": {
-            "laugh": 6,
-            "dislike": 2,
-            "like": 7
-        },
-        "comments": [
-            "comment1",
-            "comment2",
-            "comment3"
-        ],
-        "gif": "on",
-        "url": "/0"
-    },
-    {
         "id": 1,
-        "textBody": "hhh",
-        "title": "vv",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/1"
-    },
-    {
-        "id": 2,
-        "textBody": "gggggggggggggggggggggggggggg",
-        "title": "hvhvvvvvvvvvvvvvvvvv",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/2"
-    },
-    {
-        "id": 3,
-        "textBody": "hhhh",
-        "title": "hh",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/blog/3"
-    },
-    {
-        "id": 4,
-        "textBody": "DOM WAS HERE",
-        "title": "1234567890",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "https://media1.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e0e81f050d09e420ef54943cfe07bbce751277d6b0&rid=giphy-downsized.gif",
-        "url": "/4"
-    },
-    {
-        "id": 5,
-        "textBody": "vgfhj,",
-        "title": "asegb",
+        "textBody": "wrgliy 439cvbr24iygbwi47ygrbcfighrw",
+        "title": "test 2",
         "reactions": {
             "laugh": 0,
             "dislike": 0,
@@ -79,6 +10,19 @@
         },
         "comments": [],
         "gif": "https://media2.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e0054d88f9a047c3c2454801e693537758b67e88dd&rid=giphy.gif",
-        "url": "/5"
+        "url": "/posts/1"
+    },
+    {
+        "id": 0,
+        "textBody": "test 1\r\n345cnr9bivwci24fb8oc4gfe",
+        "title": "test 1",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e08b69b2b5bd96a62f1cac400f04b0b6c734c6364b&rid=giphy.gif",
+        "url": "/posts/0"
     }
 ]

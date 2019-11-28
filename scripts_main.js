@@ -15,7 +15,7 @@ const createPost = (textBody, title, gifUrl) => {
         },
         "comments": [],
         "gif": gifUrl,
-        "url": `/${id}`
+        "url": `/posts/${id}`
     }
     return obj;
     // json.push(obj);
@@ -35,7 +35,7 @@ function getBlogPostByIndex(blogPostIndex, filePath){
 
 function savePostToJson(blogObject, filePath){ //adds completed object to json file.
     let currentJsonInfo = getArrayFromJson(filePath);
-    currentJsonInfo.push(blogObject);
+    currentJsonInfo.unshift(blogObject);
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
 }
 
