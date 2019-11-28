@@ -25,7 +25,7 @@ const createPost = (textBody, title, gifUrl) => {
     }
     if (obj.gif==="on"){
         delete obj.gif;
-     }
+    }
     return obj;
 }
 

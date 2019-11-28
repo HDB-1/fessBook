@@ -39,10 +39,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/posts', (req, res) => {
-    let allPostsInfo = getArrayFromJson(database);
-    res.render("homepage.pug", {
-        allPostsInfo: allPostsInfo
-    })
+    let json = getArrayFromJson(database);
+    var count = Object.keys(json).length;
+    if (count == 0) {
+        res.render("no_posts");
+    } else {
+        let allPostsInfo = getArrayFromJson(database);
+        res.render("homepage.pug", {
+            allPostsInfo: allPostsInfo
+        })
+    }
 });
 
 app.get('/posts/:index', (req, res) => {
@@ -54,7 +60,7 @@ app.get('/random', (req, res) => {
     let json = getArrayFromJson(database);
     var count = Object.keys(json).length;
     if (count == 0) {
-        res.status(404).render("no_posts");
+        res.render("no_posts");
     } else {
         let randomIndex = randomNumber(database);
         let blogPostInfo = getBlogPostByIndex(randomIndex, database);
