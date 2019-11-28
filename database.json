@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": 0,
+        "textBody": "askjdfa",
+        "title": "lets go",
+        "reactions": {
+            "laugh": 2,
+            "dislike": 1,
+            "like": 0
+        },
+        "comments": [],
+        "url": "/posts/0",
+        "timeStamp": "14:49 on 28-11-2019"
+    }
+]

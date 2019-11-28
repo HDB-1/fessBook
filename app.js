@@ -85,7 +85,7 @@ app.post("/reaction/:index", urlencodedParser, (req, res) => {
 app.post("/homepagereaction/:index", urlencodedParser, (req, res) => {
     let index = req.params.index;
     reactToBlogPost(index, database, req.body);
-    res.redirect('/');
+    res.redirect('/posts');
 });
 
 app.get('*', function (req, res) {
