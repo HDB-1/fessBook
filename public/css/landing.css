@@ -1,8 +1,14 @@
 body, html{
     height: 100%;
     color: white;
-  
-    
+    width: 100%;
+}
+
+
+
+h1{
+    margin: 5px;
+    text-align: center;
 }
 
 .background-image{
@@ -18,4 +24,32 @@ body, html{
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+}
+
+#enter-button{
+    animation: MotionScale 2s alternate linear infinite;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    transition: 1s ease all;
+}
+
+#enter-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes MotionScale {
+    from {
+        transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(1.8, 1.8)
+    }
+    to {
+        transform: scale(1, 1)
+    }
 }

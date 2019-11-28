@@ -35,58 +35,61 @@ html(lang='en')
                a.nav-item.nav-link.active(href='/blog') Blog
                a.nav-item.nav-link.view5(href='/random') Random blog
       br
-      form(action=route, method='POST')
-         textarea#blog_title(name='blog_title', maxlength='20', value='', placeholder='Blog title...', required='')
-         br
-         textarea#textareaChars(maxlength='140', rows='5', cols='75', placeholder='Type your blog here...', name='textBody', required='')
-         span#chars 140
-         |  characters remaining
-         br
-         br
-         input#submitBtn(type='button', value='Show GIFs')
-         .gif_form
-            input#minion(type='radio', name='gif')
-            label.gif_form_label(for='minion')
-               img#minion_gif.gif
-            input#patrick(type='radio', name='gif')
-            label.gif_form_label(for='patrick')
-               img#patrick_gif.gif
-            input#popcorn(type='radio', name='gif')
-            label.gif_form_label(for='popcorn')
-               img#popcorn_gif.gif
-            input#confused(type='radio', name='gif')
-            label.gif_form_label(for='confused')
-               img#confused_gif.gif
-            input#sad(type='radio', name='gif')
-            label.gif_form_label(for='sad')
-               img#sad_gif.gif
-            input#angry(type='radio', name='gif')
-            label.gif_form_label(for='angry')
-               img#angry_gif.gif
-            input#dancing(type='radio', name='gif')
-            label.gif_form_label(for='dancing')
-               img#dancing_gif.gif
-            input#damn(type='radio', name='gif')
-            label.gif_form_label(for='damn')
-               img#damn_gif.gif
-            input#birthday(type='radio', name='gif')
-            label.gif_form_label(for='birthday')
-               img#birthday_gif.gif
-            input#toast(type='radio', name='gif')
-            label.gif_form_label(for='toast')
-               img#toast_gif.gif
-            input#scared(type='radio', name='gif')
-            label.gif_form_label(for='scared')
-               img#scared_gif.gif
-            input#homer(type='radio', name='gif')
-            label.gif_form_label(for='homer')
-               img#homer_gif.gif
-            input#excited(type='radio', name='gif')
-            label.gif_form_label(for='excited')
-               img#excited_gif.gif
-            input#no_gif(type='radio', name='gif', checked='')
-            label.gif_form_label(for='no_gif')
-               p#no_gif No gif
-         br
-         br
-         input#submitButton(type='submit', name='submitButton', value='Share')
+      div.writing-blog-container
+         form(action=route, method='POST')
+            div.flexy-div
+               textarea#blog_title(name='blog_title', maxlength='20', value='', placeholder='Blog title...', required='')
+               br
+               textarea#textareaChars(maxlength='140', rows='5', cols='75', placeholder='Type your blog here...', name='textBody', required='')
+               div.character-count-container
+                  span#chars 140
+                  |  characters remaining
+            div.flexy-div
+               input#show-gifs(type='button', class="blog-button" value='Show GIFs')
+               .gif_form
+                  input#minion(type='radio', name='gif')
+                  label.gif_form_label(for='minion')
+                     img#minion_gif.gif
+                  input#patrick(type='radio', name='gif')
+                  label.gif_form_label(for='patrick')
+                     img#patrick_gif.gif
+                  input#popcorn(type='radio', name='gif')
+                  label.gif_form_label(for='popcorn')
+                     img#popcorn_gif.gif
+                  input#confused(type='radio', name='gif')
+                  label.gif_form_label(for='confused')
+                     img#confused_gif.gif
+                  input#sad(type='radio', name='gif')
+                  label.gif_form_label(for='sad')
+                     img#sad_gif.gif
+                  input#angry(type='radio', name='gif')
+                  label.gif_form_label(for='angry')
+                     img#angry_gif.gif
+                  input#dancing(type='radio', name='gif')
+                  label.gif_form_label(for='dancing')
+                     img#dancing_gif.gif
+                  input#damn(type='radio', name='gif')
+                  label.gif_form_label(for='damn')
+                     img#damn_gif.gif
+                  input#birthday(type='radio', name='gif')
+                  label.gif_form_label(for='birthday')
+                     img#birthday_gif.gif
+                  input#toast(type='radio', name='gif')
+                  label.gif_form_label(for='toast')
+                     img#toast_gif.gif
+                  input#scared(type='radio', name='gif')
+                  label.gif_form_label(for='scared')
+                     img#scared_gif.gif
+                  input#homer(type='radio', name='gif')
+                  label.gif_form_label(for='homer')
+                     img#homer_gif.gif
+                  input#excited(type='radio', name='gif')
+                  label.gif_form_label(for='excited')
+                     img#excited_gif.gif
+                  input#no_gif(type='radio', name='gif', checked='')
+                  label.gif_form_label(for='no_gif')
+                     p#no_gif No gif
+            br
+            br
+            div.flexy-div
+               input#submitButton(type='submit', name='submitButton', class="blog-button" value='Share')
