@@ -48,7 +48,7 @@ html(lang='en')
                h4=allPostsInfo[counter].title
                p=allPostsInfo[counter].textBody
                img(src=allPostsInfo[counter].gif, alt="add later")
-            form#reaction_form(method='POST')
+            form#reaction_form(method='POST' action='/homepagereaction/'+allPostsInfo[counter].id)
                button#like-button.reaction-button(type='submit', name='like', value='like')
                   i.fas.fa-heart
                   span#like-counter.badge.badge-light #{allPostsInfo[counter].reactions.like}
