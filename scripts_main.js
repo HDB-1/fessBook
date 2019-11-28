@@ -57,7 +57,6 @@ function addCommentToBlogPost(blogPostIndex, filePath, comment){
     let currentJsonInfo = getArrayFromJson(filePath);
     currentJsonInfo[blogPostIndex].comments.push(comment);
     fs.writeFile(filePath, JSON.stringify(currentJsonInfo, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
-
 }
 
 function randomNumber(filePath) {
@@ -66,7 +65,9 @@ function randomNumber(filePath) {
     let numberr = Math.floor(Math.random() * count);
     return numberr;
 }
-
+function getBlogPostByIndex(blogPostIndex, filePath){
+    return getArrayFromJson(filePath)[blogPostIndex];
+} // get gif
 
 // exports.createPost = createPost;
 // exports.getArrayFromJson = getArrayFromJson;

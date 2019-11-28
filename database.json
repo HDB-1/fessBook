@@ -1,14 +1,14 @@
 [
     {
         "id": 0,
-        "textBody": "hhhhhhhhhhhhhhhh",
-        "title": "h",
+        "textBody": "Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 Text body 1 ",
+        "title": "BLOG POST 1",
         "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
+            "laugh": 6,
+            "dislike": 2,
+            "like": 7
         },
-        "comments": [],
+        "comments": ["comment1", "comment2", "comment3"],
         "gif": "on",
         "url": "/0"
     },

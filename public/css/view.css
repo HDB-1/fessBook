@@ -10,3 +10,11 @@
 .giphy {
     width: 100%;
 }
+
+.blogPostTextBody{
+    color: red;
+}
+
+#commentsContainer{
+    border: 2px solid black;
+}
