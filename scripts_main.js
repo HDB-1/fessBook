@@ -1,20 +1,26 @@
 const fs = require('fs')
 
-
-let sampleBlogObject = {
-    textBody: "This is a hard coded sample blog",
-    titl: "Blog title SAMPLE",
-    reactions: {
-        laugh: 0,
-        dislike: 0,
-        like: 0
-    },
-    comments: [
-    ],
-    gif: "https://media3.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e02d4a8d59b0c9ec8bf61e7d733879ea54875988e6&rid=giphy-downsized.gif",
-    url: "/posts/hhhhhhhhhhh"
+const createPost = (textBody, title, gifUrl) => {
+    const dataFromJson = fs.readFileSync('database.json');
+    const json = JSON.parse(dataFromJson);
+    let id = json.length;
+    let obj = {
+        "id":id,
+        "textBody": textBody,
+        "title": title,
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": gifUrl,
+        "url": `/blog/${id}`
+    }
+    json.push(obj);
+        fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log(`Post ${id} has been created`))
+     
 }
-
 
 function getArrayFromJson(filePath) {
     var dataFromJson = fs.readFileSync(filePath);
@@ -54,20 +60,6 @@ function addCommentToBlogPost(blogPostIndex, filePath, comment){
 }
 
 
-// console.log(getArrayFromJson('./database.json'));
-
-// console.log("now testing calling an individual file");
-
-// console.log(getBlogPostByIndex(0, './database.json'));
-
-
-
-// savePostToJson(sampleBlogObject, './database.json');
-
-// console.log(getBlogPostByIndex(2, './database.json'));
-
-// reactToBlogPost(2, './database.json', 'laugh');
-
-console.log(getBlogPostByIndex(2, './database.json'));
-
-addCommentToBlogPost(2, './database.json', "this post is lit!")
+exports.createPost = createPost;
+exports.getArrayFromJson = getArrayFromJson;
+exports.getBlogPostByIndex = getBlogPostByIndex;

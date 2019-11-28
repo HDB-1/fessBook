@@ -7,7 +7,7 @@ const axios = require('axios');
 const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
-const blog = require('./newBlogPost')
+const scripts = require('./scripts_main')
 const pug = require('pug');
 
 const blogClass = require('./blogPostClass');
@@ -37,7 +37,7 @@ app.get('/blog', (req, res) => {
 })
 
 app.post('/newpost', urlencodedParser, (req, res) => {
-    blog.createPost(req.body.textBody, req.body.blog_title, req.body.gif); 
+    scripts.createPost(req.body.textBody, req.body.blog_title, req.body.gif); 
     res.redirect("/?submittedpost=true")
 });
 
