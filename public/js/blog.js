@@ -9,7 +9,7 @@ const token = () => {
 
 $(document).ready(() => {
   var maxLength = 140;
-  $('textarea').keyup(function () {
+  $('#textareaChars').keyup(function () {
     var length = $(this).val().length;
     var length = maxLength - length;
     $('#chars').text(length);

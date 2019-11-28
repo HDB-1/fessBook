@@ -11,12 +11,12 @@ body{
 .post{
     margin: 10px;
     border: 2px solid black;
+}
 
 .body_feed {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .feed_centre {
