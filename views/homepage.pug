@@ -40,6 +40,7 @@ html(lang='en')
             |  Your post has been saved 
             button.close(type='button', data-dismiss='alert', aria-label='Close')
                span(aria-hidden='true') ×
+  
       - var counter=(allPostsInfo.length - 1)
       while counter >= 0
 
@@ -47,7 +48,7 @@ html(lang='en')
             div 
                h4=allPostsInfo[counter].title
                p=allPostsInfo[counter].textBody
-               img(src=allPostsInfo[counter].gif, alt="add later")
+               img(src=allPostsInfo[counter].gif, alt=alt=allPostsInfo[counter].gifalt)
             form#reaction_form(method='POST' action='/homepagereaction/'+allPostsInfo[counter].id)
                button#like-button.reaction-button(type='submit', name='like', value='like')
                   i.fas.fa-heart
@@ -58,5 +59,6 @@ html(lang='en')
                button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
                   i.fas.fa-laugh-squint
                   span#laugh-counter.badge.badge-light #{allPostsInfo[counter--].reactions.laugh}
+
       
       

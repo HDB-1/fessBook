@@ -14,7 +14,8 @@ const createPost = (textBody, title, gifUrl) => {
             "like": 0
         },
         "comments": [],
-        "gif": gifUrl,
+        "gif": gifUrl.split("*")[0],
+        "gifalt": gifUrl.split("*")[1],
         "url": `/blog/${id}`
     }
     json.push(obj);
