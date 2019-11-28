@@ -7,6 +7,7 @@ const axios = require('axios');
 const fs = require('fs')
 // const cors = require('cors')
 const bodyParser = require('body-parser');
+const blog = require('./newBlogPost')
 const pug = require('pug');
 
 const blogClass = require('./blogPostClass');
@@ -32,13 +33,12 @@ app.get('/blog', (req, res) => {
     res.render("blog.pug")
 })
 
-app.post('/newpost/:id', urlencodedParser, (req, res) => {
-    let blogPost = new blogClass.BlogPost(req.body.textBody, req.body.blog_title, req.body.gif); //creates the object - consider moving to blog.js
-    blogPost.archivePost();
+app.post('/newpost', urlencodedParser, (req, res) => {
+    blog.createPost(req.body.textBody, req.body.blog_title, req.body.gif); 
     res.redirect("/?submittedpost=true")
 });
 
-app.get('/views/:index', (req, res) =>
+app.get('/blog/:index', (req, res) =>
     res.render('view')
 );
 
@@ -50,15 +50,16 @@ app.get('/random', (req, res) => {
         gifUrl: url
     }
     res.render('random', blogPost);
-
-
 });
 
+/*
 app.get('/posts', urlencodedParser, (req, res) => {
     res.sendFile(path.join(__dirname, "database.json"))
     //console.log(res);
 }); // Do not touch - archives all posts for requesting.
+*/
 
+// EDIT ---------------------
 app.get("/posts/:index", urlencodedParser, (req, res) => {
     fs.readFile("./database.json", (err, data) => {
         if (err) {
@@ -76,12 +77,10 @@ app.get("/posts/:index", urlencodedParser, (req, res) => {
             }
         }
     })
-    // need method of rendering posts title 
-
 });
 
+// EDIT --------------------------------------------
 app.post("/views/comment/:index", urlencodedParser, (req, res) => {
-    debugger
     fs.readFile("./database.json", (err, data) => {
         if (err) {
             console.error(err)
@@ -145,11 +144,9 @@ app.post("/views/reaction/:index", urlencodedParser, (req, res) => {
     })
 });
 
-/*
-axios.get('/posts').then((response) => {
-    console.log(response)
-}).catch((error) => console.log(error))
-*/
+app.get('*', function(req, res){
+    res.status(404).send("Oops you can't do that!");
+  });
 
 // Listening to the server on port 8000
-app.listen(port, () => console.log(`Example listening on port #${port}! \n http://localhost:${port}`));
+app.listen(port, () => console.log(`fessBook listening on port #${port}! \n http://localhost:${port}`));

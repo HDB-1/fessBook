@@ -4,34 +4,22 @@ const fs = require('fs')
 
 class BlogPost{
     constructor(textBody, title, gif){
-
+        this.id;
         this.textBody = textBody;
         this.title = title;
         this.reactions = {'laugh': 0, 'dislike': 0, 'like': 0};
         this.comments = [];
         this.gif = gif;
-        this.url = `/posts/${this.title}`
-        
+        this.url = `/${this.id}`
     }
-
-    get postRoute(){
-        return this.url;
-    }
-
-    reactToPost(reaction){
-        let reactionCount = this.reactions[reaction];
-        reactionCount += 1;
-        this.reactions[reaction] += 1;
-    }
-
-    addComment(commentText){
-        this.comments.push(commentText);
-    }
-
 
     archivePost(){ //adds completed object to json file.
         var dataFromJson = fs.readFileSync('./database.json');
+        console.log(dataFromJson)
         var json = JSON.parse(dataFromJson);
+        console.log(json)
+        console.log(typeof json)
+        console.log(json.length)
         json.push(this);
         fs.writeFile("./database.json", JSON.stringify(json, null, 4), (err) => (err) ? console.error(err) : console.log("File has been created"))
     }
@@ -41,15 +29,9 @@ class BlogPost{
 
 //Then, axios.post to the /postdata route defined below.
 
+//console.log(jsonData)
 
-// let testPost = new BlogPost('testingConstructor', 'blahblah');
-// console.log(testPost);
-
-// testPost.reactToPost("laugh")
-
-// testPost.addComment("first comment here")
-// testPost.addComment("second comment here")
-
-// console.log(testPost);
+// let testPost = new BlogPost('body', 'title', 'giphy');
+// console.log(testPost.archivePost());
 
 module.exports = {BlogPost};
