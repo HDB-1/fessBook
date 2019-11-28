@@ -40,6 +40,7 @@
 
 img {
     width: 400px;
+    max-height: 380px;
 }
 
 .emojis {
