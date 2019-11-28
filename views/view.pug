@@ -46,7 +46,7 @@ html(lang='en')
         
 <!-- Likes and dislikes form -->
 
-         form#reaction_form(method='POST')
+         form#reaction_form(action= '/reaction/'+id, method='POST')
             button#like-button.reaction-button(type='submit', name='like', value='like')
                i.fas.fa-heart
                span#like-counter.badge.badge-light=reactions.like
@@ -56,7 +56,7 @@ html(lang='en')
             button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
                i.fas.fa-laugh-squint
                span#laugh-counter=reactions.laugh
-         form#comment_form(method='POST')
+         form#comment_form(action= '/comment/'+id, method='POST')
             div
                input#comment(type='text', name='comment', placeholder='Comment', value='')
                button#comment_button(type='submit') Post Comment
@@ -69,4 +69,3 @@ html(lang='en')
          div(id= "commentsContainer")
             for comment in comments
                p=comment
-            
