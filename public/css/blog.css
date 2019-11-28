@@ -1,5 +1,66 @@
 /* CSS for blog page */
 
+body{
+    background-color: rgb(225, 237, 250);
+}
+
+
+.writing-blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+img{
+    margin: 5px;
+}
+
+
+
+.gif_form {
+    display: none;
+    align-content: center;
+    width: 45%;
+    margin: auto;
+    padding: 20px;
+    background-size: 100% 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flexy-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
 .wow {
     font-size: 10px;
+}
+
+.character-count-container{
+    display: block;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    transition: 1s ease all;
+}
+
+.blog-button:hover{
+    background-color: black;
+    color: white;
 }

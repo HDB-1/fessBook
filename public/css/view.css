@@ -6,13 +6,11 @@
     flex-direction: column;
     text-align: center;
 }
-
+body{
+    background-color: rgb(225, 237, 250);
+}
 .giphy {
     width: 100%;
-}
-
-.blogPostTextBody{
-    color: red;
 }
 
 #commentsContainer{

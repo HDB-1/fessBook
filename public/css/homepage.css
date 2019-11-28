@@ -4,10 +4,19 @@
     display: none;
 }
 
+
+body{
+    background-color: rgb(225, 237, 250);
+}
+.post{
+    margin: 10px;
+    border: 2px solid black;
+
 .body_feed {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .feed_centre {

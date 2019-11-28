@@ -1,14 +1,3 @@
-.gif_form {
-    display: none;
-    align-content: center;
-    background: rgb(199, 255, 251);
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    background-size: 100% 100%;
-}
-
-
 .gif_form input[type="radio"] {
    display: none;
 }
@@ -16,6 +5,21 @@
 .gif_form_label {
     cursor: pointer;
 }
+
+#no_gif_label{
+    border: 4px solid grey;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.5s ease all;
+
+}
+#no_gif_label:hover{
+    background-color: grey;
+    color: white;
+    
+}
+
 
 input:checked + .gif_form_label   {
     border: 4px solid  #547AA5;
