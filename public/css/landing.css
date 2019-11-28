@@ -1,0 +1,21 @@
+body, html{
+    height: 100%;
+    color: white;
+  
+    
+}
+
+.background-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url('/assets/stars.jfif');
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
