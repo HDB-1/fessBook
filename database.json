@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 0,
+        "textBody": "akjsdfksdafudsajf iadsfhas dosdf sdioa asdoifasofd ",
+        "title": "Test post here we go",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/r1HGFou3mUwMw/giphy-downsized.gif?cid=b7d3a9e06ddc37e17d044649962e194243457136a34075fd&rid=giphy-downsized.gif",
+        "gifalt": "damn",
+        "url": "/posts/0",
+        "timeStamp": "17:3 on 28-11-2019"
+    }
+]

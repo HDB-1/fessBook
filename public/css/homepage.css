@@ -3,6 +3,10 @@ div {
     color: black;
 }
 
+body{
+    background-color: rgb(225, 237, 250);
+}
+
 .post{
     margin: 10px;
     border: 2px solid black;

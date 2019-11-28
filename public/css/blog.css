@@ -1,5 +1,10 @@
 /* CSS for blog page */
 
+body{
+    background-color: rgb(225, 237, 250);
+}
+
+
 .writing-blog-container {
     display: flex;
     flex-direction: column;
@@ -7,11 +12,16 @@
     width: 100%;
 }
 
+img{
+    margin: 5px;
+}
+
+
+
 .gif_form {
     display: none;
     align-content: center;
-    background: rgb(199, 255, 251);
-    width: 60%;
+    width: 45%;
     margin: auto;
     padding: 20px;
     background-size: 100% 100%;
