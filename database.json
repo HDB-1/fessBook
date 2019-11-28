@@ -1,38 +1,17 @@
 [
     {
         "id": 0,
-        "textBody": "tg45g45g g 5g 5g 5tg t g5jughhrifeh oife oufygwe iudygwe iuygw w weuyg ewiuygew ouywego8 ofgoro iur ",
-        "title": "f45gf45",
-        "reactions": {
-            "laugh": 2,
-            "dislike": 3,
-            "like": 2
-        },
-        "comments": [
-            "amazing",
-            "tbv",
-            "tvrr",
-            "",
-            "vttvtv"
-        ],
-        "gif": "https://media1.giphy.com/media/1BXa2alBjrCXC/giphy.gif?cid=b7d3a9e0940da40fdb7427930bb475421c4fef5d8f69e64b&rid=giphy.gif",
-        "gifalt": "sad_wine_spill",
-        "url": "/posts/0",
-        "timeStamp": "17:28 on 28-11-2019"
-    },
-    {
-        "id": 1,
-        "textBody": "erieueiuhfiuifuiuruiriuhfhfhfurfhrfufhrfuhfuirhfieruhfieurhfiuehfiuehrfiuerhf fiuerfwo8 eriiewy erwt ewocw haleri fh siu cant hebeprjdh frju",
-        "title": "rfrfrvvrvirhiehiuhiu",
+        "textBody": "Hey",
+        "title": "New Post!",
         "reactions": {
             "laugh": 0,
             "dislike": 2,
             "like": 2
         },
         "comments": [],
-        "gif": "https://media0.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e0940da40fdb7427930bb475421c4fef5d8f69e64b&rid=giphy-downsized.gif",
-        "gifalt": "confused_big_glasses",
-        "url": "/posts/1",
-        "timeStamp": "17:31 on 28-11-2019"
+        "gif": "https://media3.giphy.com/media/jUwpNzg9IcyrK/giphy.gif?cid=b7d3a9e0fcff27f79f6157247fc073e5ad59ca945018202c&rid=giphy.gif",
+        "gifalt": "homer_in_bush",
+        "url": "/posts/0",
+        "timeStamp": "15:34 on 28-11-2019"
     }
 ]
