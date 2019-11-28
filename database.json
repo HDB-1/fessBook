@@ -1,3 +1,17 @@
 [
-   
+    {
+        "id": 0,
+        "textBody": "Hey",
+        "title": "New Post!",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "https://media3.giphy.com/media/jUwpNzg9IcyrK/giphy.gif?cid=b7d3a9e0fcff27f79f6157247fc073e5ad59ca945018202c&rid=giphy.gif",
+        "gifalt": "homer_in_bush",
+        "url": "/posts/0",
+        "timeStamp": "15:34 on 28-11-2019"
+    }
 ]

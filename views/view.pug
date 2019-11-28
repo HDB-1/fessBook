@@ -52,20 +52,17 @@ html(lang='en')
                i.fas.fa-heart
                span#like-counter.badge.badge-light=reactions.like
             button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
-               i.fas.fa-thumbs-down=reactions.dislike
-               span#dislike-counter.badge.badge-light
+               i.fas.fa-thumbs-down
+               span#dislike-counter.badge.badge-light=reactions.dislike
             button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
                i.fas.fa-laugh-squint
-               span#laugh-counter=reactions.laugh
+               span#laugh-counter.badge.badge-light=reactions.laugh
          form#comment_form(action= '/comment/'+id, method='POST')
             div
                input#comment(type='text', name='comment', placeholder='Comment', value='')
                button#comment_button(type='submit') Post Comment
                br
                p#logged_comment
-         br
-         br
-
          h4 Comments:
          div(id= "commentsContainer")
          - var counter=(comments.length - 1)
