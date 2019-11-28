@@ -51,9 +51,15 @@ app.get('/posts/:index', (req, res) => {
 });
 
 app.get('/random', (req, res) => {
-    let randomIndex = randomNumber(database);
-    let blogPostInfo = getBlogPostByIndex(randomIndex, database);
-    res.render('view', blogPostInfo);
+    let json = getArrayFromJson(database);
+    var count = Object.keys(json).length;
+    if (count == 0) {
+        res.status(404).send("Oopsy daisy, there are no posts yet!");
+    } else {
+        let randomIndex = randomNumber(database);
+        let blogPostInfo = getBlogPostByIndex(randomIndex, database);
+        res.render('view', blogPostInfo);
+    }
 });
 
 app.get('/blog', (req, res) => {
