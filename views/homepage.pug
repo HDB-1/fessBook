@@ -40,21 +40,23 @@ html(lang='en')
             |  Your post has been saved 
             button.close(type='button', data-dismiss='alert', aria-label='Close')
                span(aria-hidden='true') ×
-      each item in allPostsInfo
-        a(href=item.url)
-          div 
-            h4=item.title
-            p=item.textBody
-            img(src=item.gif, alt="add later")
+      - var counter=(allPostsInfo.length - 1)
+      while counter >= 0
+
+         a(href=allPostsInfo[counter].url)
+            div 
+               h4=allPostsInfo[counter].title
+               p=allPostsInfo[counter].textBody
+               img(src=allPostsInfo[counter].gif, alt="add later")
             form#reaction_form(method='POST')
-              button#like-button.reaction-button(type='submit', name='like', value='like')
-                 i.fas.fa-heart
-                 span#like-counter.badge.badge-light #{item.reactions.like}
-              button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
-                 i.fas.fa-thumbs-down
-                 span#dislike-counter.badge.badge-light #{item.reactions.dislike}
-              button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
-                 i.fas.fa-laugh-squint
-                 span#laugh-counter.badge.badge-light #{item.reactions.laugh}
+               button#like-button.reaction-button(type='submit', name='like', value='like')
+                  i.fas.fa-heart
+                  span#like-counter.badge.badge-light #{allPostsInfo[counter].reactions.like}
+               button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
+                  i.fas.fa-thumbs-down
+                  span#dislike-counter.badge.badge-light #{allPostsInfo[counter].reactions.dislike}
+               button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
+                  i.fas.fa-laugh-squint
+                  span#laugh-counter.badge.badge-light #{allPostsInfo[counter--].reactions.laugh}
       
       

@@ -64,5 +64,18 @@
         ],
         "gif": "https://media2.giphy.com/media/BlVnrxJgTGsUw/giphy.gif?cid=b7d3a9e03047274c0532ecf8f0ca61429c4a6924014621e2&rid=giphy.gif",
         "url": "/posts/3"
+    },
+    {
+        "id": 4,
+        "textBody": "reversallll",
+        "title": "reversal test",
+        "reactions": {
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
+        },
+        "comments": [],
+        "gif": "on",
+        "url": "/posts/4"
     }
 ]
