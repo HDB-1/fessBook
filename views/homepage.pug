@@ -45,21 +45,21 @@ html(lang='en')
       - var counter=(allPostsInfo.length - 1)
       while counter >= 0
          div.body_feed
-         a.feed_centre(href=allPostsInfo[counter].url)
-            div#blogPostContainer 
-               h4.blogTitle=allPostsInfo[counter].title
-               p.blogText=allPostsInfo[counter].textBody
-               img(src=allPostsInfo[counter].gif, alt=alt=allPostsInfo[counter].gifalt)
-               p Posted at #{allPostsInfo[counter].timeStamp}
-               div.emojis
-            form#reaction_form(method='POST' action='/homepagereaction/'+allPostsInfo[counter].id)
-               button#like-button.reaction-button(type='submit', name='like', value='like')
-                  i.fas.fa-heart
-                  span#like-counter.badge.badge-light #{allPostsInfo[counter].reactions.like}
-               button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
-                  i.fas.fa-thumbs-down
-                  span#dislike-counter.badge.badge-light #{allPostsInfo[counter].reactions.dislike}
-               button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
-                  i.fas.fa-laugh-squint
-                  span#laugh-counter.badge.badge-light #{allPostsInfo[counter--].reactions.laugh}
+            a.feed_centre(href=allPostsInfo[counter].url)
+               div#blogPostContainer 
+                  h4.blogTitle=allPostsInfo[counter].title
+                  p.blogText=allPostsInfo[counter].textBody
+                  img(src=allPostsInfo[counter].gif, alt=alt=allPostsInfo[counter].gifalt)
+                  p Posted at #{allPostsInfo[counter].timeStamp}
+                  div.emojis
+                  form#reaction_form(method='POST' action='/homepagereaction/'+allPostsInfo[counter].id)
+                     button#like-button.reaction-button(type='submit', name='like', value='like')
+                        i.fas.fa-heart
+                        span#like-counter.badge.badge-light #{allPostsInfo[counter].reactions.like}
+                     button#dislike-button.reaction-button(type='submit', name='dislike', value='dislike')
+                        i.fas.fa-thumbs-down
+                        span#dislike-counter.badge.badge-light #{allPostsInfo[counter].reactions.dislike}
+                     button#laugh-button.reaction-button(type='submit', name='laugh', value='laugh')
+                        i.fas.fa-laugh-squint
+                        span#laugh-counter.badge.badge-light #{allPostsInfo[counter--].reactions.laugh}
 
