@@ -112,12 +112,15 @@ app.post("/comment/:index", urlencodedParser, (req, res) => {
 });
 
 app.post("/reaction/:index", urlencodedParser, (req, res) => {
-    console.log(req.body.dislike);
-    console.log(req.body.like);
-    console.log(req.body.laugh);
     let index = req.params.index;
     reactToBlogPost(index, database, req.body);
     res.redirect(`/posts/${index}`);
+});
+
+app.post("/homepagereaction/:index", urlencodedParser, (req, res) => {
+    let index = req.params.index;
+    reactToBlogPost(index, database, req.body);
+    res.redirect('/');
 });
 
 app.get('*', function (req, res) {
