@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "textBody": "hhhhhhhhhhhhhhhh",
-        "title": "h",
+        "textBody": "hhhhh",
+        "title": "hhh",
         "reactions": {
             "laugh": 0,
             "dislike": 0,
@@ -10,58 +10,6 @@
         },
         "comments": [],
         "gif": "on",
-        "url": "/0"
-    },
-    {
-        "id": 1,
-        "textBody": "hhh",
-        "title": "vv",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/1"
-    },
-    {
-        "id": 2,
-        "textBody": "gggggggggggggggggggggggggggg",
-        "title": "hvhvvvvvvvvvvvvvvvvv",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/2"
-    },
-    {
-        "id": 3,
-        "textBody": "hhhh",
-        "title": "hh",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "on",
-        "url": "/blog/3"
-    },
-    {
-        "id": 4,
-        "textBody": "DOM WAS HERE",
-        "title": "1234567890",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "https://media1.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e0e81f050d09e420ef54943cfe07bbce751277d6b0&rid=giphy-downsized.gif",
-        "url": "/4"
+        "url": "/posts/0"
     }
 ]

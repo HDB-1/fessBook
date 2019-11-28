@@ -15,7 +15,7 @@ const createPost = (textBody, title, gifUrl) => {
         },
         "comments": [],
         "gif": gifUrl,
-        "url": `/${id}`
+        "url": `/posts/${id}`
     }
     return obj;
     // json.push(obj);
