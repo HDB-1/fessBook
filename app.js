@@ -55,19 +55,15 @@ app.post('/newpost/:token', urlencodedParser, (req, res) => {
     res.redirect("/?submittedpost=true")
 });
 
-app.get('/:index', (req, res) => {
+app.get('/posts/:index', (req, res) => {
     let blogPostInfo = getBlogPostByIndex(req.params.index, database);
-    res.send(blogPostInfo);
-    // res.render('view')
+    res.render('view', blogPostInfo)
 });
 
-app.get('/random/post', (req, res) => {
-    // let blogPostInfoArrayLength = getArrayFromJson(database).length;
-    // let randomIndex = Math.floor(Math.random() * blogPostInfoArrayLength);
+app.get('/random', (req, res) => {
     let randomIndex = randomNumber(database);
     let blogPostInfo = getBlogPostByIndex(randomIndex, database);
-    res.send(blogPostInfo);
-    console.log(randomIndex);
+    res.render('view', blogPostInfo);
 
     // let url = "https://images.unsplash.com/photo-1562886877-0be0db6aba84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80";
     // const blogPost = {

@@ -40,6 +40,11 @@ html(lang='en')
       main
          #blogPostContainer
          br
+         h3=title
+         p.blogPostTextBody=textBody
+        
+<!-- Likes and dislikes form -->
+
          form#reaction_form(method='POST')
             button#like-button.reaction-button(type='submit', name='like', value='like')
                i.fas.fa-heart
@@ -57,5 +62,10 @@ html(lang='en')
                br
                p#logged_comment
          br
+
+
          h4 Comments:
-         #comment_thread
+         div(id= "commentsContainer")
+            for comment in comments
+               p=comment
+            
