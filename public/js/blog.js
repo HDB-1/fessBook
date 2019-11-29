@@ -1,7 +1,7 @@
 'use strict'
 
 $(document).ready(() => {
-  var maxLength = 140;
+  var maxLength = 250;
   $('#textareaChars').keyup(function () {
     var length = $(this).val().length;
     var length = maxLength - length;
