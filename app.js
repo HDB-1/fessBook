@@ -53,8 +53,11 @@ app.get('/posts', (req, res) => {
 app.get('/posts/:index', (req, res) => {
     let json = getArrayFromJson(database);
     var count = Object.keys(json).length;
+    let index = req.params.index;
     if (count == 0) {
         res.render("no_posts");
+    } else if (index < 0 || index > count) {
+        count > 1 ? res.send(`There are only ${count} posts`) : res.send(`There is only ${count} post`)
     } else {
         let blogPostInfo = getBlogPostByIndex(req.params.index, database);
         res.render('view', blogPostInfo)
