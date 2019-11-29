@@ -34,16 +34,18 @@ html(lang='en')
                   span.sr-only (current)
                a.nav-item.nav-link.active(href='/blog') Blog
                a.nav-item.nav-link.view5(href='/random') Random blog
-      br
+      
       div.writing-blog-container
+         h6 Write the title to your post here
          form(action=route, method='POST')
             div.flexy-div
                textarea#blog_title(name='blog_title', maxlength='20', value='', placeholder='Blog title...', required='')
-               br
+               h6 And the body of your post in the box below
                textarea#textareaChars(maxlength='140', rows='5', cols='75', placeholder='Type your blog here...', name='textBody', required='')
                div.character-count-container
                   span#chars 140
                   |  characters remaining
+            
             div.flexy-div
                input#show-gifs(type='button', class="blog-button" value='Show GIFs')
                .gif_form
@@ -90,7 +92,6 @@ html(lang='en')
                   input#no_gif(type='radio', name='gif', checked='')
                   label.gif_form_label#no_gif_label(for='no_gif')
                      p No gif
-            br
-            br
+            
             div.flexy-div
                input#submitButton(type='submit', name='submitButton', class="blog-button" value='Share')
