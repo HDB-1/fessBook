@@ -60,7 +60,7 @@
         "reactions": {
             "laugh": 2,
             "dislike": 1,
-            "like": 7
+            "like": 9
         },
         "comments": [
             "Happy Birthday to your dog!!!",
@@ -96,16 +96,35 @@
         "title": "Baby Shark",
         "reactions": {
             "laugh": 6,
-            "dislike": 1,
-            "like": 3
+            "dislike": 3,
+            "like": 6
         },
         "comments": [
             "LOVE IT!!!",
-            "Runaway do do do do do do do do do do do do do!!!!!! hahahaha lol banter"
+            "Runaway do do do do do do do do do do do do do!!!!!! hahahaha lol banter",
+            "fantastic!!!"
         ],
         "gif": "https://media3.giphy.com/media/BlVnrxJgTGsUw/giphy.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy.gif",
         "gifalt": "happy_dancing",
         "url": "/posts/5",
         "timeStamp": "11:58 on 29-11-2019"
+    },
+    {
+        "id": 6,
+        "textBody": "Having the best day !",
+        "title": "What a Friday!!",
+        "reactions": {
+            "laugh": 2,
+            "dislike": 1,
+            "like": 8
+        },
+        "comments": [
+            "same",
+            "me too"
+        ],
+        "gif": "https://media3.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy-downsized.gif",
+        "gifalt": "popcorn_weird",
+        "url": "/posts/6",
+        "timeStamp": "12:3 on 29-11-2019"
     }
 ]
