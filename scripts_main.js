@@ -72,12 +72,6 @@ function randomNumber(filePath) {
     return numberr;
 }
 
-
-// exports.createPost = createPost;
-// exports.getArrayFromJson = getArrayFromJson;
-// exports.getBlogPostByIndex = getBlogPostByIndex;
-
-
 module.exports = {
     getArrayFromJson,
     getBlogPostByIndex,
@@ -87,9 +81,3 @@ module.exports = {
     addCommentToBlogPost,
     randomNumber
 };
-
-console.log()
-
-let json = getArrayFromJson('./database.json');
-var count = Object.keys(json).length;
-console.log(count)

@@ -3,12 +3,11 @@ const app = express();
 const port = process.env.PORT || 8000;
 const axios = require('axios');
 const fs = require('fs')
-// const cors = require('cors')
 const bodyParser = require('body-parser');
 const pug = require('pug');
 const path = require('path');
 
-const database = './database.json'; // for calling in our write-to-json scripts.
+const database = './database.json'; 
 
 const {
     getArrayFromJson,
@@ -81,7 +80,7 @@ app.get('/blog', (req, res) => {
     })
 });
 
-
+// EDIT --------------------------------------------
 app.post('/newpost', urlencodedParser, (req, res) => {
     console.log(req)
     let blogPost = createPost(req.body.textBody, req.body.blog_title, req.body.gif);
@@ -89,7 +88,6 @@ app.post('/newpost', urlencodedParser, (req, res) => {
     res.redirect("/posts/?submittedpost=true")
 });
 
-// EDIT --------------------------------------------
 app.post("/comment/:index", urlencodedParser, (req, res) => {
     let index = req.params.index;
     let comment = req.body.comment;
