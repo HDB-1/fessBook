@@ -1,8 +1,6 @@
-// get all posts, 
-// fs.readFile("")
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const axios = require('axios');
 const fs = require('fs')
 // const cors = require('cors')
@@ -22,6 +20,7 @@ const {
     randomNumber
 } = require('./scripts_main.js');
 
+app.use(express.static(__dirname));
 app.use(express.static("public"));
 app.use(express.static("views"));
 
@@ -34,7 +33,7 @@ app.engine('pug', require('pug').renderFile);
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-    res.render("landing.pug")
+    res.render("index.pug")
 });
 
 app.get('/posts', (req, res) => {

@@ -1,7 +1,7 @@
 'use strict'
 
 $(document).ready(() => {
-  var maxLength = 250;
+  var maxLength = 140;
   $('#textareaChars').keyup(function () {
     var length = $(this).val().length;
     var length = maxLength - length;
@@ -13,8 +13,6 @@ $(document).ready(() => {
     submitButton.addEventListener("click", event => {})
     $('.gif_form').toggle();
   });
-
-
 
   const gifs = {
     'minion_laugh': 'Fn7q3cMgPZmqk',
@@ -31,10 +29,15 @@ $(document).ready(() => {
     'homer_in_bush': 'jUwpNzg9IcyrK',
     'happy_dancing': 'BlVnrxJgTGsUw'
   }
+
   const imgIds = ['#minion_gif', '#patrick_gif', '#popcorn_gif', '#confused_gif', '#sad_gif', '#angry_gif', '#dancing_gif', '#damn_gif', '#birthday_gif', '#toast_gif', '#scared_gif', '#homer_gif', '#excited_gif']
+
   const radioInputIds = ['#minion', '#patrick', '#popcorn', '#confused', '#sad', '#angry', '#dancing', '#damn', '#birthday', '#toast', '#scared', '#homer', '#excited']
+
   let ids = "";
+
   let altTags = [];
+  
   for (const [gif, id] of Object.entries(gifs)) {
     ids += `${id},`;
     altTags.push(gif);
