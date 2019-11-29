@@ -15,13 +15,29 @@
 
 .fa-heart{
     color: #F24333;
+    font-size: 25px;
 }
 .fa-laugh-squint{
     color: #F3A712;
+    font-size: 25px;
 }
 
 .fa-thumbs-down{
-    color: #006494; 
+    color: #006494;
+    font-size: 25px;
 }
+
+.badge{
+    margin: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .fa-heart, .fa-laugh-squint, .fa-thumbs-down {
+      font-size: 40px;
+    }
+    .badge{
+        font-size: 16px;
+    }
+  }
 
 

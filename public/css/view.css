@@ -40,6 +40,11 @@ aside{
      
 }
 
+.blogPostTextBody, .blogPostTitle{
+    overflow-wrap: break-word ;
+    word-break: break-all;
+}
+
 
 img {
     height: auto;
@@ -66,7 +71,7 @@ body{
     padding: 8px;
     margin: 8px;
     min-height: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .comment-form-section{
     display: block;
@@ -84,6 +89,8 @@ body{
     position: relative;
     top: 0;
     right: 0;
+    border: solid 1px #547AA5;
+    border-radius: 10px;
 }
 #comment_form {
     padding: 10px;

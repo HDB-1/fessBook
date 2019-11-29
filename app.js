@@ -69,11 +69,11 @@ app.get('/random', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-    res.render("blog.pug")
+    res.render("blog.pug", {route: '/newpost'})
 });
 
 
-app.post('/newpost/:token', urlencodedParser, (req, res) => {
+app.post('/newpost', urlencodedParser, (req, res) => {
     console.log(req)
     let blogPost = createPost(req.body.textBody, req.body.blog_title, req.body.gif);
     savePostToJson(blogPost, database);

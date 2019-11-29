@@ -39,7 +39,7 @@ html(lang='en')
                a.nav-item.nav-link.view5(href='/random') Random blog
       div.page
          main
-            h3=title
+            h3.blogPostTitle=title
             p.blogPostTextBody=textBody
             img(src=gif, alt=gifalt)
             p Posted at #{timeStamp}
@@ -56,7 +56,7 @@ html(lang='en')
          aside
             div.comment-form-section
                form#comment_form(action= '/comment/'+id, method='POST')
-                  textarea#comment(type='text', name='comment', placeholder='Comment', value='')
+                  textarea#comment(type='text', name='comment', placeholder='Comment', value='', required='')
                   button.btn.btn-dark#comment_button(type='submit') Post Comment
                p#logged_comment
             h4 Comments:

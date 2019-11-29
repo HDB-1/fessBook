@@ -16,6 +16,8 @@ body{
 
 img{
     margin: 5px;
+        max-width: 100%;
+        height: auto;
 }
 
 
@@ -66,3 +68,18 @@ form{
     background-color: black;
     color: white;
 }
+
+.blog-button:focus{
+    outline: none;
+ }
+ 
+ #blog_title, #textareaChars{
+     border: solid 1px grey;
+     border-radius: 10px;
+ }
+
+@media only screen and (max-width: 600px) {
+    #textareaChars {
+      width: 300px;
+    }
+  }

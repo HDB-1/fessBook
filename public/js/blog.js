@@ -1,11 +1,4 @@
 'use strict'
-const rand = () => {
-  return Math.random().toString(36).substr(2); // remove `0.`
-};
-
-const token = () => {
-  return rand() + rand(); // to make it longer
-};
 
 $(document).ready(() => {
   var maxLength = 140;
@@ -14,11 +7,6 @@ $(document).ready(() => {
     var length = maxLength - length;
     $('#chars').text(length);
   });
-
-
-  //token() "bnh5yzdirjinqaorq0ox1tf383nb3xr"
-
-  $('form').attr("action", `/newpost/${token()}`)
 
   //show gif menu
   $("#show-gifs").click(function () {
