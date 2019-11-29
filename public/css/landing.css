@@ -1,0 +1,63 @@
+body, html{
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+
+
+h1{
+    margin: 5px;
+    text-align: center;
+}
+
+.background-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url('/assets/stars.jfif');
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#enter-button{
+    animation: MotionScale 1.5s alternate linear infinite;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    transition: 1s ease all;
+}
+
+#enter-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes MotionScale {
+    from {
+        transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(1.8, 1.8)
+    }
+    to {
+        transform: scale(1, 1)
+    }
+}
+
+p {
+    position: absolute;
+    font-size: 8px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}

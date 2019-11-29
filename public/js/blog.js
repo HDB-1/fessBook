@@ -1,52 +1,61 @@
-// JS file for write blog page
-const rand = () => {
-  return Math.random().toString(36).substr(2); // remove `0.`
-};
-
-const token = () => {
-  return rand() + rand(); // to make it longer
-};
+'use strict'
 
 $(document).ready(() => {
-  var maxLength = 140;
-  $('textarea').keyup(function () {
+  var maxLength = 250;
+  $('#textareaChars').keyup(function () {
     var length = $(this).val().length;
     var length = maxLength - length;
     $('#chars').text(length);
   });
 
+  //show gif menu
+  $("#show-gifs").click(function () {
+    submitButton.addEventListener("click", event => {})
+    $('.gif_form').toggle();
+  });
 
- //token() "bnh5yzdirjinqaorq0ox1tf383nb3xr"
 
-  $('form').attr("action",`/newpost/${token()}` )
 
-  axios.get("https://api.giphy.com/v1/gifs?api_key=Vg9n7RBkEBnIpMlXbYQGvUjSXuOkOtdX&ids=Fn7q3cMgPZmqk")
-    .then(
-      (response) => {
-        const url1 = response.data.data[0].images.downsized.url;
-        $('#minion_gif').attr("src", url1)
-        $('#minion').val(url1)
-        console.log(response.data.data[0].images.downsized.url)
-      }
-    )
+  const gifs = {
+    'minion_laugh': 'Fn7q3cMgPZmqk',
+    'patrick_cry': 'OPU6wzx8JrHna',
+    'popcorn_weird': 'UlqLDtI8Qc0j6',
+    'confused_big_glasses': 'YVPwi7L2izTJS',
+    'sad_wine_spill': '1BXa2alBjrCXC',
+    'angry_little_girl': 'l1J9u3TZfpmeDLkD6',
+    'carlton': '1398cRUI5r3aww',
+    'damn': 'r1HGFou3mUwMw',
+    'baby_birthday': '26FPpSuhgHvYo9Kyk',
+    'congrats_toast': 'g9582DNuQppxC',
+    'terrified': 'iDNuU8ThJuaF74iEG9',
+    'homer_in_bush': 'jUwpNzg9IcyrK',
+    'happy_dancing': 'BlVnrxJgTGsUw'
+  }
+  const imgIds = ['#minion_gif', '#patrick_gif', '#popcorn_gif', '#confused_gif', '#sad_gif', '#angry_gif', '#dancing_gif', '#damn_gif', '#birthday_gif', '#toast_gif', '#scared_gif', '#homer_gif', '#excited_gif']
+  const radioInputIds = ['#minion', '#patrick', '#popcorn', '#confused', '#sad', '#angry', '#dancing', '#damn', '#birthday', '#toast', '#scared', '#homer', '#excited']
+  let ids = "";
+  let altTags = [];
+  for (const [gif, id] of Object.entries(gifs)) {
+    ids += `${id},`;
+    altTags.push(gif);
+  }
 
-  axios.get("https://api.giphy.com/v1/gifs?api_key=Vg9n7RBkEBnIpMlXbYQGvUjSXuOkOtdX&ids=OPU6wzx8JrHna")
+  axios.get(`https://api.giphy.com/v1/gifs?api_key=Vg9n7RBkEBnIpMlXbYQGvUjSXuOkOtdX&ids=${ids}`)
     .then((response) => {
-      const url2 = response.data.data[0].images.downsized.url;
-      $('#patrick_gif').attr("src", url2)
-      $('#patrick').val(url2)
-      console.log(response.data.data[0].images.downsized.url)
-    })
+      let gifsDict = [];
+      let index = 0;
+      const dataArray = response.data.data;
+      dataArray.forEach(item => {
+        let url = item.images.downsized.url;
+        $(imgIds[index]).attr("src", url)
+        $(imgIds[index]).attr("alt", altTags[index])
+        $(radioInputIds[index]).val(`${url}*${altTags[index]}`)
 
-  axios.get("https://api.giphy.com/v1/gifs?api_key=Vg9n7RBkEBnIpMlXbYQGvUjSXuOkOtdX&ids=UlqLDtI8Qc0j6")
-    .then(
-      (response) => {
-        const url3 = response.data.data[0].images.downsized.url;
-        $('#popcorn_gif').attr("src", url3)
-        $('#popcorn').val(url3)
-        console.log(response.data.data[0].images.downsized.url)
-      })
+        index++;
+      });
 
-   
+
+    }).catch((err) => console.log(err.message))
+
 
 });

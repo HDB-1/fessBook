@@ -1,6 +1,72 @@
 /* CSS for homepage */
 
+#successfulPostAlert{
+    display: none;
+}
+
+html{
+    width:100%;
+}
+
+body{
+    background-color: rgb(225, 237, 250);
+    width: 100%;
+}
 .post{
     margin: 10px;
     border: 2px solid black;
+}
+
+.body_feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed_centre {
+    width: 45%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    min-width: 300px;
+}
+
+.blogPostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.blogTitle {
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 34px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.blogText {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+}
+
+img {
+    width: 400px;
+    max-height: 380px;
+}
+
+.emojis {
+    margin: 14px;
+}
+
+#reaction_form {
+    display: flex;
+    flex-direction: row;
 }

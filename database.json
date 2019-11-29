@@ -1,32 +1,111 @@
 [
     {
-        "textBody": "ddddddddddddddddddd",
-        "title": "h",
+        "id": 0,
+        "textBody": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"",
+        "title": "my life",
         "reactions": {
-            "laugh": 21,
-            "dislike": 18,
-            "like": 14
+            "laugh": 1,
+            "dislike": 2,
+            "like": 4
         },
         "comments": [
-            "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+            "wow",
+            "great"
         ],
-        "gif": "https://media1.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e050d971c4f3691f2eaec57baf7f3500fc8635e36e&rid=giphy.gif",
-        "url": "/posts/h"
+        "gif": "https://media3.giphy.com/media/YVPwi7L2izTJS/giphy-downsized.gif?cid=b7d3a9e07f15e02ef9e24b07e3e1f98680a1f5f9cabeaa77&rid=giphy-downsized.gif",
+        "gifalt": "confused_big_glasses",
+        "url": "/posts/0",
+        "timeStamp": "11:54 on 29-11-2019"
     },
     {
-        "textBody": "hhhhhhhhhhhhhhhh",
-        "title": "njnn",
+        "id": 1,
+        "textBody": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"",
+        "title": "amazing day!",
         "reactions": {
-            "laugh": 5,
-            "dislike": 10,
-            "like": 2
+            "laugh": 4,
+            "dislike": 1,
+            "like": 1
         },
         "comments": [
-            "hhhhhhhhhhhhhh",
-            "",
-            ""
+            "yaya",
+            "cool!"
         ],
-        "gif": "https://media2.giphy.com/media/Fn7q3cMgPZmqk/giphy.gif?cid=b7d3a9e075d43cea98f02a1bbcdd2b77031efa2b654974ae&rid=giphy.gif",
-        "url": "/posts/njnn"
+        "gif": "https://media3.giphy.com/media/g9582DNuQppxC/giphy-downsized.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy-downsized.gif",
+        "gifalt": "congrats_toast",
+        "url": "/posts/1",
+        "timeStamp": "11:55 on 29-11-2019"
+    },
+    {
+        "id": 2,
+        "textBody": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"",
+        "title": "apparently...",
+        "reactions": {
+            "laugh": 1,
+            "dislike": 6,
+            "like": 3
+        },
+        "comments": [
+            "where do you live?\r\n",
+            "cool!"
+        ],
+        "gif": "https://media3.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy.gif",
+        "gifalt": "patrick_cry",
+        "url": "/posts/2",
+        "timeStamp": "11:55 on 29-11-2019"
+    },
+    {
+        "id": 3,
+        "textBody": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"",
+        "title": "Roasted Cashews",
+        "reactions": {
+            "laugh": 2,
+            "dislike": 1,
+            "like": 7
+        },
+        "comments": [
+            "Happy Birthday to your dog!!!",
+            "Amazing!!!!",
+            "=)"
+        ],
+        "gif": "https://media0.giphy.com/media/26FPpSuhgHvYo9Kyk/giphy.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy.gif",
+        "gifalt": "baby_birthday",
+        "url": "/posts/3",
+        "timeStamp": "11:56 on 29-11-2019"
+    },
+    {
+        "id": 4,
+        "textBody": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\"",
+        "title": "Love my teachers! :)",
+        "reactions": {
+            "laugh": 1,
+            "dislike": 0,
+            "like": 3
+        },
+        "comments": [
+            "same! :)",
+            "great!"
+        ],
+        "gif": "https://media3.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy-downsized.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy-downsized.gif",
+        "gifalt": "angry_little_girl",
+        "url": "/posts/4",
+        "timeStamp": "11:57 on 29-11-2019"
+    },
+    {
+        "id": 5,
+        "textBody": "do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do do ",
+        "title": "Baby Shark",
+        "reactions": {
+            "laugh": 6,
+            "dislike": 1,
+            "like": 3
+        },
+        "comments": [
+            "LOVE IT!!!",
+            "Runaway do do do do do do do do do do do do do!!!!!! hahahaha lol banter"
+        ],
+        "gif": "https://media3.giphy.com/media/BlVnrxJgTGsUw/giphy.gif?cid=b7d3a9e097b101407822eab5aefec91da7f84ee30afffb44&rid=giphy.gif",
+        "gifalt": "happy_dancing",
+        "url": "/posts/5",
+        "timeStamp": "11:58 on 29-11-2019"
     }
 ]

@@ -1,0 +1,97 @@
+doctype html
+html(lang='en')
+   head
+      meta(charset='UTF-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+      // Font for Logo
+      link(href='https://fonts.googleapis.com/css?family=Neucha&display=swap', rel='stylesheet')
+      // Logo CSS
+      link(href='/css/logo.css', type='text/css', rel='stylesheet')
+      // gif CSS
+      link(href='/css/gif.css', type='text/css', rel='stylesheet')
+      script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+      // axios
+      script(src='https://unpkg.com/axios/dist/axios.min.js')
+      // add cxsss
+      script(src='/js/blog.js')
+      link(href='/css/blog.css', type='text/css', rel='stylesheet')
+      title fessBook Blog
+   body
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+         a.navbar-brand(href='/posts')
+            p.logo
+               | fess
+               span.book BooK
+         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+         #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+               a.nav-item.nav-link(href='/posts')
+                  | Home 
+                  span.sr-only (current)
+               a.nav-item.nav-link.active(href='/blog') Blog
+               a.nav-item.nav-link.view5(href='/random') Random blog
+      
+      div.writing-blog-container
+         h6 Write the title to your post here
+         form(action=route, method='POST')
+            div.flexy-div
+               textarea#blog_title(name='blog_title', maxlength='20', value='', placeholder='Blog title...', required='')
+               h6 And the body of your post in the box below
+               textarea#textareaChars(maxlength='250', rows='5', cols='75', placeholder='Type your blog here...', name='textBody', required='')
+               div.character-count-container
+                  span#chars 250
+                  |  characters remaining
+            
+            div.flexy-div
+               input#show-gifs(type='button', class="blog-button" value='Show GIFs')
+               .gif_form
+                  input#minion(type='radio', name='gif')
+                  label.gif_form_label(for='minion')
+                     img#minion_gif.gif
+                  input#patrick(type='radio', name='gif')
+                  label.gif_form_label(for='patrick')
+                     img#patrick_gif.gif
+                  input#popcorn(type='radio', name='gif')
+                  label.gif_form_label(for='popcorn')
+                     img#popcorn_gif.gif
+                  input#confused(type='radio', name='gif')
+                  label.gif_form_label(for='confused')
+                     img#confused_gif.gif
+                  input#sad(type='radio', name='gif')
+                  label.gif_form_label(for='sad')
+                     img#sad_gif.gif
+                  input#angry(type='radio', name='gif')
+                  label.gif_form_label(for='angry')
+                     img#angry_gif.gif
+                  input#dancing(type='radio', name='gif')
+                  label.gif_form_label(for='dancing')
+                     img#dancing_gif.gif
+                  input#damn(type='radio', name='gif')
+                  label.gif_form_label(for='damn')
+                     img#damn_gif.gif
+                  input#birthday(type='radio', name='gif')
+                  label.gif_form_label(for='birthday')
+                     img#birthday_gif.gif
+                  input#toast(type='radio', name='gif')
+                  label.gif_form_label(for='toast')
+                     img#toast_gif.gif
+                  input#scared(type='radio', name='gif')
+                  label.gif_form_label(for='scared')
+                     img#scared_gif.gif
+                  input#homer(type='radio', name='gif')
+                  label.gif_form_label(for='homer')
+                     img#homer_gif.gif
+                  input#excited(type='radio', name='gif')
+                  label.gif_form_label(for='excited')
+                     img#excited_gif.gif
+                  br
+                  input#no_gif(type='radio', name='gif', checked='')
+                  label.gif_form_label#no_gif_label(for='no_gif')
+                     p No gif
+            
+            div.flexy-div
+               input#submitButton(type='submit', name='submitButton', class="blog-button" value='Share')
