@@ -1,136 +1,74 @@
 [
     {
         "id": 0,
-        "textBody": "aksdf iasdfkuzdf iodsiofda soiadsif jidaf oiasdfoidsaf oias foidsaf oidsa aspdof j",
-        "title": "My first post",
-        "reactions": {
-            "laugh": 1,
-            "dislike": 1,
-            "like": 0
-        },
-        "comments": [
-            "yeh this is ok",
-            "oiakdsfiadjs\r\n",
-            "bjhwieoakovDK"
-        ],
-        "gif": "https://media1.giphy.com/media/jUwpNzg9IcyrK/giphy.gif?cid=b7d3a9e034436e4446ec745dd66f4f2fb114a1c26f4170f3&rid=giphy.gif",
-        "gifalt": "homer_in_bush",
-        "url": "/posts/0",
-        "timeStamp": "23:25 on 28-11-2019"
-    },
-    {
-        "id": 1,
-        "textBody": "ADFLKJAFD",
-        "title": "2",
+        "textBody": "ASEDFA",
+        "title": "blog post 1",
         "reactions": {
             "laugh": 0,
-            "dislike": 2,
-            "like": 4
+            "dislike": 0,
+            "like": 0
         },
-        "comments": [
-            "Why?                 ???",
-            "<p style=\"color:green\"></p>",
-            "<h4>H</h4>"
-        ],
-        "gif": "https://media3.giphy.com/media/jUwpNzg9IcyrK/giphy.gif?cid=b7d3a9e0fcff27f79f6157247fc073e5ad59ca945018202c&rid=giphy.gif",
-        "gifalt": "homer_in_bush",
+        "comments": [],
         "url": "/posts/0",
-        "timeStamp": "15:34 on 28-11-2019"
+        "timeStamp": "9:23 on 29-11-2019"
     },
     {
         "id": 1,
-        "textBody": "Great! A wiki is run using wiki software, otherwise known as a wiki engine. A wiki engine is a type of content management system, but it dif",
-        "title": "New!",
+        "textBody": "SADFGHJK",
+        "title": "blog post 2",
         "reactions": {
-            "laugh": 1,
-            "dislike": 2,
-            "like": 2
+            "laugh": 5,
+            "dislike": 5,
+            "like": 0
         },
-        "comments": [
-            "Helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
-            "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-            "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-            "",
-            "Hey!!!!!!!"
-        ],
-        "gif": "https://media0.giphy.com/media/1398cRUI5r3aww/giphy.gif?cid=b7d3a9e01a9fb9bc12bbb04580fda42ccd4c0ef65dea8065&rid=giphy.gif",
-        "gifalt": "carlton",
+        "comments": [],
         "url": "/posts/1",
-        "timeStamp": "17:56 on 28-11-2019"
+        "timeStamp": "9:23 on 29-11-2019"
     },
     {
         "id": 2,
-        "textBody": "Hey",
-        "title": "Hey",
+        "textBody": "SADFHJKUYTREFG",
+        "title": "blog post 3",
         "reactions": {
-            "laugh": 3,
-            "dislike": 2,
+            "laugh": 13,
+            "dislike": 9,
             "like": 0
         },
         "comments": [
-            "Hey!",
-            "sooooooooooooooooo!",
-            "H"
+            "ASDLFKJADSFKLJAD",
+            "SFADGH",
+            "DGHJKJHGFVC",
+            "ADFADSFASDF"
         ],
         "url": "/posts/2",
-        "timeStamp": "20:3 on 28-11-2019"
+        "timeStamp": "9:23 on 29-11-2019"
     },
     {
         "id": 3,
-        "textBody": "Nooooooooooooo",
-        "title": "Hey",
+        "textBody": "askdjsdkfn",
+        "title": "blog post 4",
         "reactions": {
             "laugh": 0,
             "dislike": 0,
             "like": 0
         },
-        "comments": [
-            "Hello"
-        ],
+        "comments": [],
+        "gif": "https://media2.giphy.com/media/UlqLDtI8Qc0j6/giphy-downsized.gif?cid=b7d3a9e057b66334711f8cfa507d32d8dd37e57f7386f13d&rid=giphy-downsized.gif",
+        "gifalt": "popcorn_weird",
         "url": "/posts/3",
-        "timeStamp": "20:11 on 28-11-2019"
+        "timeStamp": "9:44 on 29-11-2019"
     },
     {
         "id": 4,
-        "textBody": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-        "title": "hhhhhhhhhhhhhhhhhhhh",
+        "textBody": "sadftyuiolkujgfds",
+        "title": "5",
         "reactions": {
-            "laugh": 2,
-            "dislike": 3,
-            "like": 1
+            "laugh": 0,
+            "dislike": 0,
+            "like": 0
         },
         "comments": [],
-        "gif": "https://media1.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e01a56ea950f13a3234ba01d3f52e92c1307fe94c6&rid=giphy.gif",
-        "gifalt": "patrick_cry",
         "url": "/posts/4",
-        "timeStamp": "20:16 on 28-11-2019"
-    },
-    {
-        "id": 5,
-        "textBody": "Hey!!",
-        "title": "Hey",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "gif": "https://media0.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=b7d3a9e062998afb8383cadc3499b9539ee6199e4dbbe5ed&rid=giphy.gif",
-        "gifalt": "patrick_cry",
-        "url": "/posts/5",
-        "timeStamp": "20:42 on 28-11-2019"
-    },
-    {
-        "id": 6,
-        "textBody": "jjj",
-        "title": "j",
-        "reactions": {
-            "laugh": 0,
-            "dislike": 0,
-            "like": 0
-        },
-        "comments": [],
-        "url": "/posts/6",
-        "timeStamp": "9:2 on 29-11-2019"
+        "timeStamp": "9:44 on 29-11-2019"
     }
 ]

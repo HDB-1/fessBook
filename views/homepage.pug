@@ -46,7 +46,7 @@ html(lang='en')
       while counter >= 0
          div.body_feed
             a.feed_centre(href=allPostsInfo[counter].url)
-               div.blogPostContainer 
+               div.blogPostContainer(id="blogPost"+allPostsInfo[counter].id)
                   h4.blogTitle=allPostsInfo[counter].title
                   p.blogText=allPostsInfo[counter].textBody
                   img.img-fluid(src=allPostsInfo[counter].gif, alt=alt=allPostsInfo[counter].gifalt)

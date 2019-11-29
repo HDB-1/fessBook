@@ -87,3 +87,9 @@ module.exports = {
     addCommentToBlogPost,
     randomNumber
 };
+
+console.log()
+
+let json = getArrayFromJson('./database.json');
+var count = Object.keys(json).length;
+console.log(count)

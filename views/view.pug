@@ -43,7 +43,7 @@ html(lang='en')
             p.blogPostTextBody=textBody
             img(src=gif, alt=gifalt)
             p Posted at #{timeStamp}
-            form#reaction_form(action= '/reaction/'+id, method='POST')
+            form#reaction_form(action= '/reaction/'+(id), method='POST')
                button#like-button.reaction-button(type='submit', name='like', value='like')
                   i.fas.fa-heart
                   span#like-counter.badge.badge-light=reactions.like

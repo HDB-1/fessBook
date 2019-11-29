@@ -22,7 +22,6 @@ const {
     randomNumber
 } = require('./scripts_main.js');
 
-
 app.use(express.static("public"));
 app.use(express.static("views"));
 
@@ -97,7 +96,7 @@ app.post("/reaction/:index", urlencodedParser, (req, res) => {
 app.post("/homepagereaction/:index", urlencodedParser, (req, res) => {
     let index = req.params.index;
     reactToBlogPost(index, database, req.body);
-    res.redirect('/posts');
+    res.redirect(`/posts/#blogPost${index}`);
 });
 
 app.get('*', function (req, res) {
