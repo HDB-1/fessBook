@@ -4,9 +4,13 @@
     display: none;
 }
 
+html{
+    width:100%;
+}
 
 body{
     background-color: rgb(225, 237, 250);
+    width: 100%;
 }
 .post{
     margin: 10px;
@@ -23,20 +27,26 @@ body{
     width: 45%;
     margin-bottom: 35px;
     margin-top: 35px;
+    min-width: 300px;
 }
 
-#blogPostContainer {
+.blogPostContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
 }
 
 .blogTitle {
     font-variant: small-caps;
     text-decoration: underline;
     font-size: 34px;
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 .blogText {
