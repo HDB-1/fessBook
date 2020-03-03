@@ -1,5 +1,7 @@
 ### fessBook ###
 
+Link: https://fessbook.herokuapp.com/
+
 Brief:
 For the rest of the week you will be working to create a community journaling website.
 Your website should have the following functionality for users:
